@@ -13,6 +13,10 @@ $marron-claro:#Cc9933;
 $marron-regular:#996633;
 $marron-oscuro:#663333;
 
+.lightboxOverlay {
+    background-color: $marron-regular;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +72,9 @@ $marron-oscuro:#663333;
         padding-left: 1.5em;
         padding-right: 1.5em;
 
-
+        &:nth-child(1) {
+            border-left: 3px solid $amarillo;
+        }
 
 
 
@@ -247,7 +253,7 @@ header {
 
     .mandala {
         display: block;
-        min-height: 1200px;
+        min-height: 1350px;
 
 
         width: 50%;
@@ -317,6 +323,7 @@ header {
                 p {
                     font-family: $font-text;
                     text-align: justify;
+                    color: $marron-claro;
 
 
 
@@ -346,18 +353,20 @@ header {
                 p {
                     font-size: 8em;
                     font-family: $font-nombre;
-                    color: $marron-oscuro;
+                    color: white;
                     font-weight: bolder;
                     line-height: 4rem;
+                    padding-bottom: 4rem;
 
-                    sub {
-                        font-size: 8em;
+                    sup {
+                        font-size: 8rem;
                         font-family: $font-nombre;
-                        color: $marron-oscuro;
+                        color: white;
                         font-weight: bolder;
                         line-height: 4rem;
                         text-align: right;
                         margin-left: auto;
+                        top: .5em;
 
                     }
                 }
@@ -366,16 +375,21 @@ header {
             .text-mandala {
                 p {
                     font-size: 1.1rem;
+                    color: white;
+
+                    sub {
+                        font-size: 8em;
+                        font-family: $font-nombre;
+                        color: white;
+                        font-weight: bolder;
+                        line-height: 4rem;
+                        text-align: right;
+                        margin-left: auto;
+                    }
                 }
 
-                sub {
-                    font-size: 8em;
-                    font-family: $font-nombre;
-                    color: $marron-oscuro;
-                    font-weight: bolder;
-                    line-height: 4rem;
+                &:nth-child(3) {
                     text-align: right;
-                    margin-left: auto;
                 }
             }
         }
@@ -466,6 +480,36 @@ header {
                 margin-bottom: 1em;
                 color: $naranja;
 
+            }
+
+            .lightbox-gallery {
+                display: flex;
+                flex-direction: row;
+
+                .container {
+                    padding: 0;
+
+                    .row {
+                        margin: 0;
+                        justify-content: left;
+
+                        a {
+                            margin: 0;
+                            height: auto;
+                            width: auto;
+
+                            h3 {
+                                font-size: 1.5em;
+                                color: $naranja;
+                            }
+
+                            &:hover {
+                                text-decoration: underline;
+                                text-decoration-color: $naranja;
+                            }
+                        }
+                    }
+                }
             }
 
             a {

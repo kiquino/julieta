@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400;700&family=Philosopher&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+.lightboxOverlay {
+  background-color: #996633;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,6 +52,10 @@
 .navbar-nav li {
   padding-left: 1.5em;
   padding-right: 1.5em;
+}
+
+.navbar-nav li:nth-child(1) {
+  border-left: 3px solid #FFFF99;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -253,7 +261,7 @@ header {
 
 .about .mandala {
   display: block;
-  min-height: 1200px;
+  min-height: 1350px;
   width: 50%;
   height: auto;
   position: absolute;
@@ -320,6 +328,7 @@ header {
 .about .contenedor-bio .text-box-bio .text-bio p {
   font-family: "Open Sans", sans-serif;
   text-align: justify;
+  color: #Cc9933;
 }
 
 .about .contenedor-sobremandalas {
@@ -350,33 +359,40 @@ header {
 .about .contenedor-sobremandalas .text-box-bio .title-mandalas p {
   font-size: 8em;
   font-family: "Philosopher", sans-serif;
-  color: #663333;
+  color: white;
   font-weight: bolder;
   line-height: 4rem;
+  padding-bottom: 4rem;
 }
 
-.about .contenedor-sobremandalas .text-box-bio .title-mandalas p sub {
-  font-size: 8em;
+.about .contenedor-sobremandalas .text-box-bio .title-mandalas p sup {
+  font-size: 8rem;
   font-family: "Philosopher", sans-serif;
-  color: #663333;
+  color: white;
   font-weight: bolder;
   line-height: 4rem;
   text-align: right;
   margin-left: auto;
+  top: .5em;
 }
 
 .about .contenedor-sobremandalas .text-box-bio .text-mandala p {
   font-size: 1.1rem;
+  color: white;
 }
 
-.about .contenedor-sobremandalas .text-box-bio .text-mandala sub {
+.about .contenedor-sobremandalas .text-box-bio .text-mandala p sub {
   font-size: 8em;
   font-family: "Philosopher", sans-serif;
-  color: #663333;
+  color: white;
   font-weight: bolder;
   line-height: 4rem;
   text-align: right;
   margin-left: auto;
+}
+
+.about .contenedor-sobremandalas .text-box-bio .text-mandala:nth-child(3) {
+  text-align: right;
 }
 
 .cv {
@@ -491,6 +507,44 @@ header {
 .cv .contenedor-cv .contenedor-extra-cv h2 {
   margin-bottom: 1em;
   color: #Ff6600;
+}
+
+.cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container {
+  padding: 0;
+}
+
+.cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row {
+  margin: 0;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row a {
+  margin: 0;
+  height: auto;
+  width: auto;
+}
+
+.cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row a h3 {
+  font-size: 1.5em;
+  color: #Ff6600;
+}
+
+.cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #Ff6600;
+          text-decoration-color: #Ff6600;
 }
 
 .cv .contenedor-cv .contenedor-extra-cv a h3 {
