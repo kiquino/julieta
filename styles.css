@@ -449,7 +449,7 @@ header {
 }
 
 .cv .contenedor-cv .download-cv a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   -webkit-text-decoration-color: #Ff6600;
           text-decoration-color: #Ff6600;
   text-decoration-thickness: 3px;
