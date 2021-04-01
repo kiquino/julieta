@@ -1087,6 +1087,7 @@ header {
           flex-flow: column nowrap;
   height: auto;
   min-height: 10em;
+  background-color: #Cc9933;
 }
 
 .testimonial .jumbotron {
@@ -1140,11 +1141,21 @@ header {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   margin-left: auto;
-  width: 19em;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: auto;
+}
+
+.galeria .contenedor-contenido-galeria .cta-galeria a {
+  width: 2em;
+}
+
+.galeria .contenedor-contenido-galeria .cta-galeria a:nth-child(2) {
+  margin-right: 1em;
 }
 
 .galeria .contenedor-contenido-galeria .cta-galeria a .icon-insta {
@@ -1240,12 +1251,12 @@ header {
 
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text img,
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text img {
-  width: 85%;
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  margin: 0 0;
 }
 
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte {

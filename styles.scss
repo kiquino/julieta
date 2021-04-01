@@ -982,6 +982,7 @@ header {
     flex-flow: column nowrap;
     height: auto;
     min-height: 10em;
+    background-color: $marron-claro;
 
     .jumbotron {
         padding: 0;
@@ -1027,11 +1028,17 @@ header {
             display: flex;
             flex-flow: row nowrap;
             margin-left: auto;
-            width: 19em;
-            justify-content: flex-end;
+            width: max-content;
+            justify-content: space-between;
             height: auto;
 
             a {
+                width: 2em;
+
+                &:nth-child(2) {
+                    margin-right: 1em;
+                }
+
                 .icon-insta {
                     width: 3em;
                     height: 3em;
@@ -1116,10 +1123,10 @@ header {
                                     }
 
                                     img {
-                                        width: 85%;
+                                        width: 100%;
                                         height: auto;
                                         display: flex;
-                                        margin: 0 auto;
+                                        margin: 0 0;
                                     }
                                 }
                             }
