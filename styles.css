@@ -1238,15 +1238,21 @@ header {
 
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row:hover,
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(102, 51, 51, 0.8);
+}
+
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row:hover p,
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row:hover p {
+  opacity: 1;
 }
 
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row p,
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row p {
   font-family: "Philosopher", sans-serif;
   font-size: 3em;
-  color: black;
+  color: white;
   font-weight: bolder;
+  opacity: 0;
 }
 
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text img,
@@ -1729,7 +1735,7 @@ header {
 }
 
 .contacto .contenedor-form-info .formulario form .input:nth-child(5):hover {
-  background-color: rgba(145, 145, 145, 0.8);
+  background-color: rgba(153, 102, 51, 0.8);
 }
 
 .contacto .contenedor-form-info .formulario form .input:nth-child(5):hover button {
@@ -1749,6 +1755,11 @@ header {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   color: #996633;
+  width: 100%;
+}
+
+.contacto .contenedor-form-info .formulario form .input button:focus {
+  outline: none;
 }
 
 .contacto .contenedor-form-info .formulario form .input label {
@@ -1763,11 +1774,21 @@ header {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   width: auto;
+  width: 80%;
+}
+
+.contacto .contenedor-form-info .formulario form .input input:focus {
+  outline: none;
 }
 
 .contacto .contenedor-form-info .formulario form .input textarea {
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  width: 80%;
+}
+
+.contacto .contenedor-form-info .formulario form .input textarea:focus {
+  outline: none;
 }
 
 .contacto .contenedor-form-info .datos-contacto {

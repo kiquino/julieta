@@ -10,8 +10,8 @@ sans-serif;
 $naranja:#Ff6600;
 $amarillo:#FFFF99;
 $marron-claro:#Cc9933;
-$marron-regular:#996633;
-$marron-oscuro:#663333;
+$marron-regular:rgb(153, 102, 51);
+$marron-oscuro:rgb(102, 51, 51);
 
 .lightboxOverlay {
     background-color: $marron-regular;
@@ -1111,14 +1111,19 @@ header {
                                         background-color: rgba(0, 0, 0, 0);
 
                                         &:hover {
-                                            background-color: rgba(0, 0, 0, 0.3);
+                                            background-color: rgba(102, 51, 51, 0.8);
+                                            p{
+                                                opacity: 1;
+                                            }
+                                            
                                         }
 
                                         p {
                                             font-family: $font-nombre;
                                             font-size: 3em;
-                                            color: black;
+                                            color: white;
                                             font-weight: bolder;
+                                            opacity: 0;
                                         }
                                     }
 
@@ -1362,12 +1367,13 @@ header {
                             background-color: rgba(0, 0, 0, 0);
                             border: none;
                             width: auto;
+                            
                         }
 
                         textarea {
                             background-color: rgba(0, 0, 0, 0);
                             border: none;
-
+                           
                         }
                     }
                 }
@@ -1512,9 +1518,10 @@ header {
 
                     &:nth-child(5) {
                         text-align: center;
+                        
 
                         &:hover {
-                            background-color: rgba(145, 145, 145, 0.8);
+                            background-color: rgba(153,102,51, 0.8);
 
                             button {
                                 color: white;
@@ -1533,6 +1540,10 @@ header {
                         font-family: $font-nav;
                         font-weight: bold;
                         color: $marron-regular;
+                        width: 100%;
+                        &:focus{
+                            outline: none;
+                        }
                     }
 
                     label {
@@ -1547,12 +1558,19 @@ header {
                         background-color: rgba(0, 0, 0, 0);
                         border: none;
                         width: auto;
+                        width: 80%;
+                        &:focus{
+                            outline: none;
+                        }
                     }
 
                     textarea {
                         background-color: rgba(0, 0, 0, 0);
                         border: none;
-
+                        width: 80%;
+                        &:focus{
+                            outline: none;
+                        }
                     }
                 }
             }
