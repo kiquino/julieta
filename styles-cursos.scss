@@ -1,0 +1,1022 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400;700&family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+$font-text:'Open Sans',
+sans-serif;
+$font-nav:'Nunito',
+sans-serif;
+$font-nombre:'Philosopher',
+sans-serif;
+$naranja:#Ff6600;
+$amarillo:#FFFF99;
+$marron-claro:#Cc9933;
+$marron-regular:rgb(153, 102, 51);
+$marron-oscuro:rgb(102, 51, 51);
+
+.lightboxOverlay {
+    background-color: $marron-regular;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+.jumbotron {
+    min-height: 28em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+
+}
+
+.carousel-item {
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    .logo-carousel {
+        position: absolute;
+        display: flex;
+        top: 40%;
+        left: 20%;
+        background-size: contain;
+        height: 8em;
+        width: 18em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(assets/LOGO/LOGO+REDES.png);
+
+    }
+
+}
+
+.container {
+    width: 100%;
+
+    .row {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+
+        a {
+            width: 100px;
+            height: 100px;
+            margin: 1rem 1em;
+            overflow: hidden;
+
+            img {
+                width: 100px;
+                height: auto;
+
+            }
+        }
+    }
+}
+
+.carousel {
+    height: 100%;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+.talleres-cursos {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
+    width: 100%;
+    height: auto;
+    padding-bottom: 5em;
+
+    .talleres-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        min-height: 12em;
+        background-color: $marron-claro;
+        justify-content: flex-start;
+
+        .talleres-header-title {
+            width: auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 0;
+            padding-left: 8%;
+
+            p {
+                font-size: 4rem;
+                width: auto;
+                font-family: $font-nombre;
+                font-weight: 600;
+                color: white;
+                border-bottom: 3px solid $marron-oscuro;
+
+                &:nth-child(2) {
+                    font-family: $font-nav;
+                    font-size: 2.5rem;
+                    border-bottom: none;
+                }
+            }
+
+            h2 {
+                text-align: left;
+                width: min-content;
+                padding-top: 0em;
+                border-top: 3px solid black;
+
+            }
+        }
+
+
+    }
+
+    .talleres-part1 {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 3em;
+        justify-content: space-between;
+
+        .talleres-part1-text {
+
+            flex-direction: column;
+
+
+            .talleres-part1-title {
+                p {
+                    font-family: $font-nombre;
+                    color: $marron-oscuro;
+                    font-size: 3em;
+                    line-height: 1em;
+                }
+
+            }
+
+            p {
+                color: $marron-claro;
+                font-family: $font-nav;
+            }
+
+            b {
+                color: $marron-regular;
+                font-family: $font-nav;
+            }
+
+            width: 50%;
+            display: flex;
+            text-align: left;
+        }
+
+        .talleres-part1-extra {
+            width: 35%;
+            text-align: right;
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .talleres-contenido {
+                h1 {
+                    color: $marron-regular;
+                    font-family: $font-nav;
+                    font-weight: bold;
+                }
+
+                a {
+                    text-decoration-color: $naranja;
+
+
+
+                    h3 {
+                        color: $naranja;
+                        font-family: $font-nav;
+                    }
+                }
+
+
+                margin-bottom:2em;
+            }
+
+            .talleres-contenido {
+
+                width: 100%;
+            }
+
+            .talleres-beneficios {
+                padding-right: 1em;
+                border-right: 3px solid $naranja;
+                font-family: $font-nav;
+
+                h1 {
+                    color: $marron-claro;
+
+                    font-size: 2em;
+
+                }
+
+                p {
+                    line-height: .5em;
+                    color: $marron-regular;
+                }
+
+            }
+        }
+    }
+
+    .talleres-part2 {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        margin: 0 auto;
+        height: auto;
+        justify-content: space-between;
+
+        .talleres-lista {
+            text-align: left;
+            width: 30%;
+            border-left: 3px solid $naranja;
+            padding-left: 1em;
+            font-family: $font-nav;
+            line-height: 1.5em;
+
+            p {
+                margin: 0;
+                padding: 0;
+                color: $marron-claro;
+
+            }
+
+            b {
+
+                color: $marron-regular;
+            }
+        }
+
+        .talleres-pronto {
+            width: auto;
+            color: $marron-oscuro;
+            margin-top: 2em;
+
+            p {
+                padding: 0;
+                margin: 0;
+                font-family: $font-nombre;
+                font-size: 2em;
+                text-align: right;
+                line-height: 1em;
+
+                &:nth-child(2) {
+                    letter-spacing: .15em;
+                    border-bottom: 3px solid $naranja;
+                }
+
+                &:nth-child(3) {
+                    font-family: $font-nav;
+                    text-align: center;
+                }
+
+                &:nth-child(4) {
+                    font-family: $font-nav;
+                    text-align: center;
+                }
+            }
+
+            .muy-pronto {
+                width: auto;
+                height: 4em;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url(assets/LOGO/MUY_PRONTO.svg);
+            }
+        }
+    }
+}
+
+.talleres {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
+    width: 100%;
+    height: auto;
+    padding-bottom: 5em;
+
+    .talleres-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        min-height: 12em;
+        background-color: $marron-claro;
+        justify-content: space-between;
+
+        .talleres-header-title {
+            width: 40%;
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 0;
+
+            p {
+                font-size: 4rem;
+                width: 50%;
+                font-family: $font-nombre;
+                font-weight: 600;
+                color: white;
+            }
+
+            h2 {
+                text-align: left;
+                width: min-content;
+                padding-top: 0em;
+                border-top: 3px solid black;
+
+            }
+        }
+
+        .talleres-header-img {
+            background-color: $marron-regular;
+            height: auto;
+            width: 50%;
+        }
+    }
+
+    .talleres-part1 {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 3em;
+        justify-content: space-between;
+
+        .talleres-part1-text {
+
+            flex-direction: column;
+
+
+            .talleres-part1-title {
+                p {
+                    font-family: $font-nombre;
+                    color: $marron-oscuro;
+                    font-size: 3em;
+                    line-height: 1em;
+                }
+
+            }
+
+            p {
+                color: $marron-claro;
+                font-family: $font-nav;
+            }
+
+            b {
+                color: $marron-regular;
+                font-family: $font-nav;
+            }
+
+            width: 50%;
+            display: flex;
+            text-align: left;
+        }
+
+        .talleres-part1-extra {
+            width: 35%;
+            text-align: right;
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .talleres-contenido {
+                h1 {
+                    color: $marron-regular;
+                    font-family: $font-nav;
+                    font-weight: bold;
+                }
+
+                a {
+                    text-decoration-color: $naranja;
+
+
+
+                    h3 {
+                        color: $naranja;
+                        font-family: $font-nav;
+                    }
+                }
+
+
+                margin-bottom:2em;
+            }
+
+            .talleres-contenido {
+
+                width: 100%;
+            }
+
+            .talleres-beneficios {
+                padding-right: 1em;
+                border-right: 3px solid $naranja;
+                font-family: $font-nav;
+
+                h1 {
+                    color: $marron-claro;
+
+                    font-size: 2em;
+
+                }
+
+                p {
+                    line-height: .5em;
+                    color: $marron-regular;
+                }
+
+            }
+        }
+    }
+
+    .talleres-part2 {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        margin: 0 auto;
+        height: auto;
+        justify-content: space-between;
+
+        .talleres-lista {
+            text-align: left;
+            width: 30%;
+            border-left: 3px solid $naranja;
+            padding-left: 1em;
+            font-family: $font-nav;
+            line-height: 1.5em;
+
+            p {
+                margin: 0;
+                padding: 0;
+                color: $marron-claro;
+
+            }
+
+            b {
+
+                color: $marron-regular;
+            }
+        }
+
+        .talleres-pronto {
+            width: auto;
+            color: $marron-oscuro;
+            margin-top: 2em;
+
+            p {
+                padding: 0;
+                margin: 0;
+                font-family: $font-nombre;
+                font-size: 2em;
+                text-align: right;
+                line-height: 1em;
+
+                &:nth-child(2) {
+                    letter-spacing: .15em;
+                    border-bottom: 3px solid $naranja;
+                }
+
+                &:nth-child(3) {
+                    font-family: $font-nav;
+                    text-align: center;
+                }
+
+                &:nth-child(4) {
+                    font-family: $font-nav;
+                    text-align: center;
+                }
+            }
+
+            .muy-pronto {
+                width: auto;
+                height: 4em;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url(assets/LOGO/MUY_PRONTO.svg);
+            }
+        }
+    }
+}
+
+
+
+.carousel-indicators {
+    li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+}
+
+
+
+.contacto-cursos {
+    min-height: 10em;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CONTACTO.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .header-contacto {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: right;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        margin-top: 6em;
+
+        .contact-redes {
+            .title-header-contacto {
+                font-family: $font-nombre;
+                font-size: 4em;
+                color: $marron-oscuro;
+                font-weight: bold;
+
+                p {
+                    margin: 0;
+                    line-height: 1em;
+                }
+            }
+
+            .inline {
+                display: flex;
+                flex-flow: row nowrap;
+                text-align: right;
+                justify-content: flex-end;
+                align-items: center;
+                font-family: $font-nav;
+                font-size: 1.8em;
+                color: $naranja;
+
+                p {
+                    margin: 0;
+                }
+
+                .header-contacto-logos {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    height: 1.5em;
+                    margin: auto 0;
+
+                    a {
+                        .logo {
+                            height: 1.5em;
+                            width: 1.5em;
+                        }
+
+                        .insta {
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+                        }
+
+                        .face {
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        .datos-contacto {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 50%;
+            font-size: 2em;
+            font-family: $font-nav;
+            text-align: left;
+
+            p {
+                color: $marron-oscuro;
+
+            }
+
+            a {
+                color: $naranja;
+            }
+        }
+
+
+    }
+
+    .contenedor-form-info {
+        display: flex;
+        flex-flow: row;
+        width: 80%;
+        margin: 1em auto;
+        justify-content: space-between;
+
+        .formulario {
+            width: 80%;
+
+            form {
+                display: flex;
+                flex-flow: column nowrap;
+                width: auto;
+                align-items: center;
+
+                .contenedor-todo {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    flex-wrap: nowrap;
+                    height: auto;
+                    margin-bottom: 1em;
+
+                    .contact-form {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .input {
+                            background-color: rgba(255, 255, 255, 0.8);
+                            width: 80%;
+                            padding: .5em;
+                            border-radius: 20px;
+                            margin: .2em auto;
+                            text-align: left;
+
+
+
+
+
+
+
+
+
+
+                        }
+                    }
+
+                    .input {
+                        background-color: rgba(255, 255, 255, 0.8);
+                        width: 80%;
+                        padding: .5em;
+                        border-radius: 20px;
+                        margin: .2em auto;
+
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.8);
+                        }
+
+                        display: flex;
+
+
+
+
+                        label {
+                            font-family: $font-nav;
+                            color: $marron-regular;
+                            margin: 0;
+                            margin-right: 1em;
+                            font-weight: bold;
+                        }
+
+                        input {
+                            background-color: rgba(0, 0, 0, 0);
+                            border: none;
+                            width: auto;
+
+                        }
+
+                        textarea {
+                            background-color: rgba(0, 0, 0, 0);
+                            border: none;
+
+                        }
+                    }
+                }
+
+                button {
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                    text-align: center;
+                    font-family: $font-nav;
+                    font-weight: bold;
+                    color: $marron-regular;
+                }
+
+                .input {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    width: 80%;
+                    padding: .5em;
+                    border-radius: 20px;
+                    margin: .2em auto;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: rgba(145, 145, 145, 0.8);
+
+                        button {
+                            color: white;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+
+
+    }
+}
+
+.contacto {
+    min-height: 10em;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CONTACTO.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .header-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: right;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        margin-top: 6em;
+
+        .title-header-contacto {
+            font-family: $font-nombre;
+            font-size: 4em;
+            color: $marron-oscuro;
+            font-weight: bold;
+
+            p {
+                margin: 0;
+                line-height: 1em;
+            }
+        }
+
+        .inline {
+            display: flex;
+            flex-flow: row nowrap;
+            text-align: right;
+            justify-content: flex-end;
+            align-items: center;
+            font-family: $font-nav;
+            font-size: 1.8em;
+            color: $naranja;
+
+            p {
+                margin: 0;
+            }
+
+            .header-contacto-logos {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                height: 1.5em;
+                margin: auto 0;
+
+                a {
+                    .logo {
+                        height: 1.5em;
+                        width: 1.5em;
+                    }
+
+                    .insta {
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+                    }
+
+                    .face {
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-form-info {
+        display: flex;
+        flex-flow: row;
+        width: 80%;
+        margin: 1em auto;
+        justify-content: space-between;
+
+        .formulario {
+            width: 50%;
+
+            form {
+                display: flex;
+                flex-flow: column nowrap;
+                width: auto;
+                align-items: center;
+
+                .input {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    width: 80%;
+                    padding: .5em;
+                    border-radius: 20px;
+                    margin: .2em auto;
+
+                    &:nth-child(5) {
+                        text-align: center;
+
+
+                        &:hover {
+                            background-color: rgba(153, 102, 51, 0.8);
+
+                            button {
+                                color: white;
+                            }
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        display: flex;
+                    }
+
+                    button {
+                        background-color: rgba(0, 0, 0, 0);
+                        border: none;
+                        text-align: center;
+                        font-family: $font-nav;
+                        font-weight: bold;
+                        color: $marron-regular;
+                        width: 100%;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    label {
+                        font-family: $font-nav;
+                        color: $marron-regular;
+                        margin: 0;
+                        margin-right: 1em;
+                        font-weight: bold;
+                    }
+
+                    input {
+                        background-color: rgba(0, 0, 0, 0);
+                        border: none;
+                        width: auto;
+                        width: 80%;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    textarea {
+                        background-color: rgba(0, 0, 0, 0);
+                        border: none;
+                        width: 80%;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .datos-contacto {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 50%;
+            font-size: 2em;
+            font-family: $font-nav;
+
+            p {
+                color: $marron-oscuro;
+
+            }
+
+            a {
+                color: $naranja;
+            }
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 90;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $marron-claro;
+    color: white;
+    font-family: $font-nav;
+    width: 100%;
+    align-items: center;
+    height: auto;
+    padding: 0em 5em;
+
+    p {
+
+        margin: 2em 0;
+    }
+
+    .diseniadora {
+        width: auto;
+        display: flex;
+        flex-flow: row nowrap;
+
+        a {
+            img {
+                height: auto;
+
+                width: 100%;
+            }
+        }
+    }
+
+}

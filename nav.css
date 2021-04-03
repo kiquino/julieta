@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400;700&family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+.nav-color {
+  background-color: #Cc9933;
+  width: 100%;
+  padding: 0.5em 0;
+  color: white !important;
+}
+
+.dropdown-menu {
+  background-color: #Cc9933;
+  width: 100%;
+  text-align: center;
+  border: none;
+  width: auto;
+  left: -30%;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  border-radius: 0;
+  font-size: 1.3rem;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #996633;
+}
+
+.navbar-nav {
+  width: 90%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.navbar-nav li {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.navbar-nav li:nth-child(1) {
+  border-left: 3px solid #FFFF99;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.4em;
+  font-weight: bolder;
+  color: white;
+}
+/*# sourceMappingURL=nav.css.map */
