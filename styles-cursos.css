@@ -14,6 +14,20 @@
 }
 
 .jumbotron {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.jumbotron .container {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  display: contents;
+}
+
+.jumbotron {
   min-height: 28em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,7 +129,6 @@ header {
   background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
   width: 100%;
   height: auto;
-  padding-bottom: 5em;
 }
 
 .talleres-cursos .talleres-header {
@@ -291,6 +304,7 @@ header {
           flex-direction: row;
   width: 85%;
   margin: 0 auto;
+  padding-bottom: 6em;
   height: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -746,6 +760,9 @@ header {
 
 .contacto-cursos .header-contacto .datos-contacto a {
   color: #Ff6600;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .contacto-cursos .contenedor-form-info {
@@ -817,8 +834,12 @@ header {
   width: 80%;
   padding: .5em;
   border-radius: 20px;
-  margin: .2em auto;
+  margin: .2em 0;
   text-align: left;
+}
+
+.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .contact-form .input:focus {
+  outline: none;
 }
 
 .contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input {
@@ -836,6 +857,10 @@ header {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input:focus {
+  outline: none;
+}
+
 .contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input label {
   font-family: "Nunito", sans-serif;
   color: #996633;
@@ -850,9 +875,17 @@ header {
   width: auto;
 }
 
+.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input input:focus {
+  outline: none;
+}
+
 .contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input textarea {
   background-color: rgba(0, 0, 0, 0);
   border: none;
+}
+
+.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input textarea:focus {
+  outline: none;
 }
 
 .contacto-cursos .contenedor-form-info .formulario form button {
@@ -862,19 +895,28 @@ header {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   color: #996633;
+  width: 100%;
+}
+
+.contacto-cursos .contenedor-form-info .formulario form button:focus {
+  outline: none;
 }
 
 .contacto-cursos .contenedor-form-info .formulario form .input {
   background-color: rgba(255, 255, 255, 0.8);
-  width: 80%;
+  width: 100%;
   padding: .5em;
   border-radius: 20px;
   margin: .2em auto;
   text-align: center;
 }
 
+.contacto-cursos .contenedor-form-info .formulario form .input:focus {
+  outline: none;
+}
+
 .contacto-cursos .contenedor-form-info .formulario form .input:hover {
-  background-color: rgba(145, 145, 145, 0.8);
+  background-color: rgba(153, 102, 51, 0.8);
 }
 
 .contacto-cursos .contenedor-form-info .formulario form .input:hover button {
@@ -1114,6 +1156,9 @@ header {
 
 .contacto .contenedor-form-info .datos-contacto a {
   color: #Ff6600;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .sticky {

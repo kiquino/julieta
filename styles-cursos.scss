@@ -27,7 +27,20 @@ $marron-oscuro:rgb(102, 51, 51);
 
 
 
+.jumbotron {
+    padding: 0;
+    width: 100%;
+    margin: 0;
 
+    .container {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        display: contents;
+
+    }
+}
 
 .jumbotron {
     min-height: 28em;
@@ -120,7 +133,7 @@ header {
     background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
     width: 100%;
     height: auto;
-    padding-bottom: 5em;
+
 
     .talleres-header {
         width: 100%;
@@ -268,6 +281,7 @@ header {
         flex-direction: row;
         width: 85%;
         margin: 0 auto;
+        padding-bottom: 6em;
         height: auto;
         justify-content: space-between;
 
@@ -662,6 +676,7 @@ header {
 
             a {
                 color: $naranja;
+                width: min-content;
             }
         }
 
@@ -704,15 +719,12 @@ header {
                             width: 80%;
                             padding: .5em;
                             border-radius: 20px;
-                            margin: .2em auto;
+                            margin: .2em 0;
                             text-align: left;
 
-
-
-
-
-
-
+                            &:focus {
+                                outline: none;
+                            }
 
 
 
@@ -728,6 +740,10 @@ header {
 
                         &:hover {
                             background-color: rgba(255, 255, 255, 0.8);
+                        }
+
+                        &:focus {
+                            outline: none;
                         }
 
                         display: flex;
@@ -748,11 +764,19 @@ header {
                             border: none;
                             width: auto;
 
+                            &:focus {
+                                outline: none;
+                            }
+
                         }
 
                         textarea {
                             background-color: rgba(0, 0, 0, 0);
                             border: none;
+
+                            &:focus {
+                                outline: none;
+                            }
 
                         }
                     }
@@ -765,18 +789,27 @@ header {
                     font-family: $font-nav;
                     font-weight: bold;
                     color: $marron-regular;
+                    width: 100%;
+
+                    &:focus {
+                        outline: none;
+                    }
                 }
 
                 .input {
                     background-color: rgba(255, 255, 255, 0.8);
-                    width: 80%;
+                    width: 100%;
                     padding: .5em;
                     border-radius: 20px;
                     margin: .2em auto;
                     text-align: center;
 
+                    &:focus {
+                        outline: none;
+                    }
+
                     &:hover {
-                        background-color: rgba(145, 145, 145, 0.8);
+                        background-color: rgba(153, 102, 51, 0.8);
 
                         button {
                             color: white;
@@ -976,6 +1009,7 @@ header {
 
             a {
                 color: $naranja;
+                width: min-content;
             }
         }
     }
