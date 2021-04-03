@@ -562,227 +562,227 @@ header {
     }
 }
 
-.talleres-cursos {
-    display: flex;
-    flex-direction: column;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
-    width: 100%;
-    height: auto;
-    padding-bottom: 5em;
-
-    .talleres-header {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        min-height: 12em;
-        background-color: $marron-claro;
-        justify-content: flex-start;
-
-        .talleres-header-title {
-            width: auto;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding: 3rem 0;
-            padding-left: 8%;
-
-            p {
-                font-size: 4rem;
-                width: auto;
-                font-family: $font-nombre;
-                font-weight: 600;
-                color: white;
-                border-bottom: 3px solid $marron-oscuro;
-
-                &:nth-child(2) {
-                    font-family: $font-nav;
-                    font-size: 2.5rem;
-                    border-bottom: none;
-                }
-            }
-
-            h2 {
-                text-align: left;
-                width: min-content;
-                padding-top: 0em;
-                border-top: 3px solid black;
-
-            }
-        }
-
-
-    }
-
-    .talleres-part1 {
-        display: flex;
-        flex-direction: row;
-        width: 85%;
-        height: auto;
-        margin: 0 auto;
-        margin-top: 3em;
-        justify-content: space-between;
-
-        .talleres-part1-text {
-
-            flex-direction: column;
-
-
-            .talleres-part1-title {
-                p {
-                    font-family: $font-nombre;
-                    color: $marron-oscuro;
-                    font-size: 3em;
-                    line-height: 1em;
-                }
-
-            }
-
-            p {
-                color: $marron-claro;
-                font-family: $font-nav;
-            }
-
-            b {
-                color: $marron-regular;
-                font-family: $font-nav;
-            }
-
-            width: 50%;
-            display: flex;
-            text-align: left;
-        }
-
-        .talleres-part1-extra {
-            width: 35%;
-            text-align: right;
-            display: flex;
-            height: auto;
-            flex-direction: column;
-            justify-content: space-between;
-
-            .talleres-contenido {
-                h1 {
-                    color: $marron-regular;
-                    font-family: $font-nav;
-                    font-weight: bold;
-                }
-
-                a {
-                    text-decoration-color: $naranja;
-
-
-
-                    h3 {
-                        color: $naranja;
-                        font-family: $font-nav;
-                    }
-                }
-
-
-                margin-bottom:2em;
-            }
-
-            .talleres-contenido {
-
-                width: 100%;
-            }
-
-            .talleres-beneficios {
-                padding-right: 1em;
-                border-right: 3px solid $naranja;
-                font-family: $font-nav;
-
-                h1 {
-                    color: $marron-claro;
-
-                    font-size: 2em;
-
-                }
-
-                p {
-                    line-height: .5em;
-                    color: $marron-regular;
-                }
-
-            }
-        }
-    }
-
-    .talleres-part2 {
-        display: flex;
-        flex-direction: row;
-        width: 85%;
-        margin: 0 auto;
-        height: auto;
-        justify-content: space-between;
-
-        .talleres-lista {
-            text-align: left;
-            width: 30%;
-            border-left: 3px solid $naranja;
-            padding-left: 1em;
-            font-family: $font-nav;
-            line-height: 1.5em;
-
-            p {
-                margin: 0;
-                padding: 0;
-                color: $marron-claro;
-
-            }
-
-            b {
-
-                color: $marron-regular;
-            }
-        }
-
-        .talleres-pronto {
-            width: auto;
-            color: $marron-oscuro;
-            margin-top: 2em;
-
-            p {
-                padding: 0;
-                margin: 0;
-                font-family: $font-nombre;
-                font-size: 2em;
-                text-align: right;
-                line-height: 1em;
-
-                &:nth-child(2) {
-                    letter-spacing: .15em;
-                    border-bottom: 3px solid $naranja;
-                }
-
-                &:nth-child(3) {
-                    font-family: $font-nav;
-                    text-align: center;
-                }
-
-                &:nth-child(4) {
-                    font-family: $font-nav;
-                    text-align: center;
-                }
-            }
-
-            .muy-pronto {
-                width: auto;
-                height: 4em;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-image: url(assets/LOGO/MUY_PRONTO.svg);
-            }
-        }
-    }
-}
+//.talleres-cursos {
+//    display: flex;
+//    flex-direction: column;
+//    background-position: center;
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//    background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
+//    width: 100%;
+//    height: auto;
+//    padding-bottom: 5em;
+//
+//    .talleres-header {
+//        width: 100%;
+//        display: flex;
+//        flex-direction: row;
+//        flex-wrap: nowrap;
+//        min-height: 12em;
+//        background-color: $marron-claro;
+//        justify-content: flex-start;
+//
+//        .talleres-header-title {
+//            width: 100%;
+//
+//            display: flex;
+//            flex-direction: column;
+//            justify-content: space-between;
+//            align-items: center;
+//            padding: 3rem 0;
+//            padding-left: 8%;
+//
+//            p {
+//                font-size: 4rem;
+//                width: auto;
+//                font-family: $font-nombre;
+//                font-weight: 600;
+//                color: white;
+//                border-bottom: 3px solid $marron-oscuro;
+//
+//                &:nth-child(2) {
+//                    font-family: $font-nav;
+//                    font-size: 2.5rem;
+//                    border-bottom: none;
+//                }
+//            }
+//
+//            h2 {
+//                text-align: left;
+//                width: min-content;
+//                padding-top: 0em;
+//                border-top: 3px solid black;
+//
+//            }
+//        }
+//
+//
+//    }
+//
+//    .talleres-part1 {
+//        display: flex;
+//        flex-direction: row;
+//        width: 85%;
+//        height: auto;
+//        margin: 0 auto;
+//        margin-top: 3em;
+//        justify-content: space-between;
+//
+//        .talleres-part1-text {
+//
+//            flex-direction: column;
+//
+//
+//            .talleres-part1-title {
+//                p {
+//                    font-family: $font-nombre;
+//                    color: $marron-oscuro;
+//                    font-size: 3em;
+//                    line-height: 1em;
+//                }
+//
+//            }
+//
+//            p {
+//                color: $marron-claro;
+//                font-family: $font-nav;
+//            }
+//
+//            b {
+//                color: $marron-regular;
+//                font-family: $font-nav;
+//            }
+//
+//            width: 50%;
+//            display: flex;
+//            text-align: left;
+//        }
+//
+//        .talleres-part1-extra {
+//            width: 35%;
+//            text-align: right;
+//            display: flex;
+//            height: auto;
+//            flex-direction: column;
+//            justify-content: space-between;
+//
+//            .talleres-contenido {
+//                h1 {
+//                    color: $marron-regular;
+//                    font-family: $font-nav;
+//                    font-weight: bold;
+//                }
+//
+//                a {
+//                    text-decoration-color: $naranja;
+//
+//
+//
+//                    h3 {
+//                        color: $naranja;
+//                        font-family: $font-nav;
+//                    }
+//                }
+//
+//
+//                margin-bottom:2em;
+//            }
+//
+//            .talleres-contenido {
+//
+//                width: 100%;
+//            }
+//
+//            .talleres-beneficios {
+//                padding-right: 1em;
+//                border-right: 3px solid $naranja;
+//                font-family: $font-nav;
+//
+//                h1 {
+//                    color: $marron-claro;
+//
+//                    font-size: 2em;
+//
+//                }
+//
+//                p {
+//                    line-height: .5em;
+//                    color: $marron-regular;
+//                }
+//
+//            }
+//        }
+//    }
+//
+//    .talleres-part2 {
+//        display: flex;
+//        flex-direction: row;
+//        width: 85%;
+//        margin: 0 auto;
+//        height: auto;
+//        justify-content: space-between;
+//
+//        .talleres-lista {
+//            text-align: left;
+//            width: 30%;
+//            border-left: 3px solid $naranja;
+//            padding-left: 1em;
+//            font-family: $font-nav;
+//            line-height: 1.5em;
+//
+//            p {
+//                margin: 0;
+//                padding: 0;
+//                color: $marron-claro;
+//
+//            }
+//
+//            b {
+//
+//                color: $marron-regular;
+//            }
+//        }
+//
+//        .talleres-pronto {
+//            width: auto;
+//            color: $marron-oscuro;
+//            margin-top: 2em;
+//
+//            p {
+//                padding: 0;
+//                margin: 0;
+//                font-family: $font-nombre;
+//                font-size: 2em;
+//                text-align: right;
+//                line-height: 1em;
+//
+//                &:nth-child(2) {
+//                    letter-spacing: .15em;
+//                    border-bottom: 3px solid $naranja;
+//                }
+//
+//                &:nth-child(3) {
+//                    font-family: $font-nav;
+//                    text-align: center;
+//                }
+//
+//                &:nth-child(4) {
+//                    font-family: $font-nav;
+//                    text-align: center;
+//                }
+//            }
+//
+//            .muy-pronto {
+//                width: auto;
+//                height: 4em;
+//                background-position: center;
+//                background-repeat: no-repeat;
+//                background-size: contain;
+//                background-image: url(assets/LOGO/MUY_PRONTO.svg);
+//            }
+//        }
+//    }
+//}
 
 .talleres {
     display: flex;
@@ -805,11 +805,11 @@ header {
         justify-content: space-between;
 
         .talleres-header-title {
-            width: 40%;
+            width: 50%;
             margin-left: auto;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             padding: 3rem 0;
 
@@ -831,9 +831,13 @@ header {
         }
 
         .talleres-header-img {
-            background-color: $marron-regular;
+
             height: auto;
             width: 50%;
+
+            img {
+                height: 100%;
+            }
         }
     }
 

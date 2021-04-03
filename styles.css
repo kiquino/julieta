@@ -593,260 +593,6 @@ header {
   border-right: 3px solid #Ff6600;
 }
 
-.talleres-cursos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
-  width: 100%;
-  height: auto;
-  padding-bottom: 5em;
-}
-
-.talleres-cursos .talleres-header {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  min-height: 12em;
-  background-color: #Cc9933;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.talleres-cursos .talleres-header .talleres-header-title {
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 3rem 0;
-  padding-left: 8%;
-}
-
-.talleres-cursos .talleres-header .talleres-header-title p {
-  font-size: 4rem;
-  width: auto;
-  font-family: "Philosopher", sans-serif;
-  font-weight: 600;
-  color: white;
-  border-bottom: 3px solid #663333;
-}
-
-.talleres-cursos .talleres-header .talleres-header-title p:nth-child(2) {
-  font-family: "Nunito", sans-serif;
-  font-size: 2.5rem;
-  border-bottom: none;
-}
-
-.talleres-cursos .talleres-header .talleres-header-title h2 {
-  text-align: left;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  padding-top: 0em;
-  border-top: 3px solid black;
-}
-
-.talleres-cursos .talleres-part1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 85%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 3em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-text {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: left;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-text .talleres-part1-title p {
-  font-family: "Philosopher", sans-serif;
-  color: #663333;
-  font-size: 3em;
-  line-height: 1em;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-text p {
-  color: #Cc9933;
-  font-family: "Nunito", sans-serif;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-text b {
-  color: #996633;
-  font-family: "Nunito", sans-serif;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-extra {
-  width: 35%;
-  text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-contenido {
-  margin-bottom: 2em;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-contenido h1 {
-  color: #996633;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-contenido a {
-  -webkit-text-decoration-color: #Ff6600;
-          text-decoration-color: #Ff6600;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-contenido a h3 {
-  color: #Ff6600;
-  font-family: "Nunito", sans-serif;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-contenido {
-  width: 100%;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-beneficios {
-  padding-right: 1em;
-  border-right: 3px solid #Ff6600;
-  font-family: "Nunito", sans-serif;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-beneficios h1 {
-  color: #Cc9933;
-  font-size: 2em;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-beneficios p {
-  line-height: .5em;
-  color: #996633;
-}
-
-.talleres-cursos .talleres-part2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 85%;
-  margin: 0 auto;
-  height: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.talleres-cursos .talleres-part2 .talleres-lista {
-  text-align: left;
-  width: 30%;
-  border-left: 3px solid #Ff6600;
-  padding-left: 1em;
-  font-family: "Nunito", sans-serif;
-  line-height: 1.5em;
-}
-
-.talleres-cursos .talleres-part2 .talleres-lista p {
-  margin: 0;
-  padding: 0;
-  color: #Cc9933;
-}
-
-.talleres-cursos .talleres-part2 .talleres-lista b {
-  color: #996633;
-}
-
-.talleres-cursos .talleres-part2 .talleres-pronto {
-  width: auto;
-  color: #663333;
-  margin-top: 2em;
-}
-
-.talleres-cursos .talleres-part2 .talleres-pronto p {
-  padding: 0;
-  margin: 0;
-  font-family: "Philosopher", sans-serif;
-  font-size: 2em;
-  text-align: right;
-  line-height: 1em;
-}
-
-.talleres-cursos .talleres-part2 .talleres-pronto p:nth-child(2) {
-  letter-spacing: .15em;
-  border-bottom: 3px solid #Ff6600;
-}
-
-.talleres-cursos .talleres-part2 .talleres-pronto p:nth-child(3) {
-  font-family: "Nunito", sans-serif;
-  text-align: center;
-}
-
-.talleres-cursos .talleres-part2 .talleres-pronto p:nth-child(4) {
-  font-family: "Nunito", sans-serif;
-  text-align: center;
-}
-
-.talleres-cursos .talleres-part2 .talleres-pronto .muy-pronto {
-  width: auto;
-  height: 4em;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(assets/LOGO/MUY_PRONTO.svg);
-}
-
 .talleres {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -883,7 +629,7 @@ header {
 }
 
 .talleres .talleres-header .talleres-header-title {
-  width: 40%;
+  width: 50%;
   margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,9 +638,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -919,9 +665,12 @@ header {
 }
 
 .talleres .talleres-header .talleres-header-img {
-  background-color: #996633;
   height: auto;
   width: 50%;
+}
+
+.talleres .talleres-header .talleres-header-img img {
+  height: 100%;
 }
 
 .talleres .talleres-part1 {
