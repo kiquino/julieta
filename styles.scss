@@ -41,7 +41,7 @@ $marron-oscuro:rgb(102, 51, 51);
 
     width: auto;
 
-    left: -30%;
+    left: 10%;
 
 
     .dropdown-item {
@@ -62,7 +62,7 @@ $marron-oscuro:rgb(102, 51, 51);
 }
 
 .navbar-nav {
-    width: 90%;
+    width: 80%;
     justify-content: space-evenly;
 
     margin: 0 auto;
@@ -71,15 +71,41 @@ $marron-oscuro:rgb(102, 51, 51);
 
         padding-left: 1.5em;
         padding-right: 1.5em;
+        width: 100%;
+        text-align: center;
+        border-radius: 2px;
 
         &:nth-child(1) {
-            border-left: 3px solid $amarillo;
+            border-left: 3px solid white;
+        }
+
+        &:nth-child(2) {
+            border-left: 3px solid white;
+        }
+
+        &:nth-child(3) {
+            border-left: 3px solid white;
+        }
+
+        &:nth-child(4) {
+            border-left: 3px solid white;
+        }
+
+        &:nth-child(5) {
+            border-right: 3px solid white;
+            border-left: 3px solid white;
+
+        }
+
+        &:nth-child(6) {
+            border-right: 3px solid $amarillo;
         }
 
 
 
     }
 }
+
 
 .navbar-dark {
     .navbar-nav {
@@ -1112,10 +1138,11 @@ header {
 
                                         &:hover {
                                             background-color: rgba(102, 51, 51, 0.8);
-                                            p{
+
+                                            p {
                                                 opacity: 1;
                                             }
-                                            
+
                                         }
 
                                         p {
@@ -1367,13 +1394,13 @@ header {
                             background-color: rgba(0, 0, 0, 0);
                             border: none;
                             width: auto;
-                            
+
                         }
 
                         textarea {
                             background-color: rgba(0, 0, 0, 0);
                             border: none;
-                           
+
                         }
                     }
                 }
@@ -1518,10 +1545,10 @@ header {
 
                     &:nth-child(5) {
                         text-align: center;
-                        
+
 
                         &:hover {
-                            background-color: rgba(153,102,51, 0.8);
+                            background-color: rgba(153, 102, 51, 0.8);
 
                             button {
                                 color: white;
@@ -1541,7 +1568,8 @@ header {
                         font-weight: bold;
                         color: $marron-regular;
                         width: 100%;
-                        &:focus{
+
+                        &:focus {
                             outline: none;
                         }
                     }
@@ -1559,7 +1587,8 @@ header {
                         border: none;
                         width: auto;
                         width: 80%;
-                        &:focus{
+
+                        &:focus {
                             outline: none;
                         }
                     }
@@ -1568,7 +1597,8 @@ header {
                         background-color: rgba(0, 0, 0, 0);
                         border: none;
                         width: 80%;
-                        &:focus{
+
+                        &:focus {
                             outline: none;
                         }
                     }
