@@ -26,7 +26,7 @@
   text-align: center;
   border: none;
   width: auto;
-  left: 10%;
+  left: -10%;
 }
 
 .dropdown-menu .dropdown-item {
@@ -1468,6 +1468,9 @@ header {
 
 .contacto-cursos .header-contacto .datos-contacto a {
   color: #Ff6600;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .contacto-cursos .contenedor-form-info {
@@ -1836,6 +1839,9 @@ header {
 
 .contacto .contenedor-form-info .datos-contacto a {
   color: #Ff6600;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .sticky {

@@ -41,7 +41,7 @@ $marron-oscuro:rgb(102, 51, 51);
 
     width: auto;
 
-    left: 10%;
+    left: -10%;
 
 
     .dropdown-item {
@@ -1309,6 +1309,7 @@ header {
 
             a {
                 color: $naranja;
+                width: min-content;
             }
         }
 
@@ -1623,6 +1624,7 @@ header {
 
             a {
                 color: $naranja;
+                width: min-content;
             }
         }
     }

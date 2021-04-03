@@ -14,7 +14,7 @@
   text-align: center;
   border: none;
   width: auto;
-  left: 10%;
+  left: -10%;
 }
 
 .dropdown-menu .dropdown-item {
