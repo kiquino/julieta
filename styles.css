@@ -667,6 +667,7 @@ header {
 .talleres .talleres-header .talleres-header-img {
   height: auto;
   width: 50%;
+  overflow-x: hidden;
 }
 
 .talleres .talleres-header .talleres-header-img img {
