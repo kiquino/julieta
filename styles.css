@@ -671,7 +671,8 @@ header {
 }
 
 .talleres .talleres-header .talleres-header-img img {
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .talleres .talleres-part1 {
