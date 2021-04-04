@@ -280,7 +280,7 @@ header {
   background-repeat: no-repeat;
   overflow-y: hidden;
   background-size: cover;
-  background-image: url(assets/FONDOS_DE_LA_WEB/ELEFANTE_Images/ELEFANTE_ImgID1.png);
+  background-image: url(assets/FONDOS/FONDO_BIO.jpg);
 }
 
 .about .mandala {
@@ -294,7 +294,7 @@ header {
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(assets/FONDOS_DE_LA_WEB/ELEFANTE.png);
+  background-image: url(assets/FONDOS/ELEFANTE.svg);
 }
 
 .about .mandala img {
@@ -424,7 +424,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CV.jpg);
+  background-image: url(assets/FONDOS/FONDO_CV.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,7 +604,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
+  background-image: url(assets/FONDOS/FONDO_CURSO_Y_TALLER.jpg);
   width: 100%;
   height: auto;
   padding-bottom: 5em;
@@ -697,7 +697,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,30 +737,6 @@ header {
           justify-content: space-between;
 }
 
-.talleres .talleres-part1 .talleres-part1-extra .talleres-contenido {
-  margin-bottom: 2em;
-}
-
-.talleres .talleres-part1 .talleres-part1-extra .talleres-contenido h1 {
-  color: #996633;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-}
-
-.talleres .talleres-part1 .talleres-part1-extra .talleres-contenido a {
-  -webkit-text-decoration-color: #Ff6600;
-          text-decoration-color: #Ff6600;
-}
-
-.talleres .talleres-part1 .talleres-part1-extra .talleres-contenido a h3 {
-  color: #Ff6600;
-  font-family: "Nunito", sans-serif;
-}
-
-.talleres .talleres-part1 .talleres-part1-extra .talleres-contenido {
-  width: 100%;
-}
-
 .talleres .talleres-part1 .talleres-part1-extra .talleres-beneficios {
   padding-right: 1em;
   border-right: 3px solid #Ff6600;
@@ -781,16 +757,43 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 85%;
   margin: 0 auto;
   height: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.talleres .talleres-part2 .talleres-contenido {
+  margin-bottom: 2em;
+}
+
+.talleres .talleres-part2 .talleres-contenido h1 {
+  color: #996633;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.talleres .talleres-part2 .talleres-contenido a {
+  -webkit-text-decoration-color: #Ff6600;
+          text-decoration-color: #Ff6600;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.talleres .talleres-part2 .talleres-contenido a h3 {
+  color: #Ff6600;
+  font-family: "Nunito", sans-serif;
+}
+
+.talleres .talleres-part2 .talleres-contenido {
+  width: 100%;
 }
 
 .talleres .talleres-part2 .talleres-lista {
@@ -887,7 +890,7 @@ header {
 
 .galeria {
   width: 100%;
-  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_GALERIA.jpg);
+  background-image: url(assets/FONDOS/FONDO_GALERIA.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1094,7 +1097,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CONTACTO.jpg);
+  background-image: url(assets/FONDOS/FONDO_CONTACTO.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1364,7 +1367,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CONTACTO.jpg);
+  background-image: url(assets/FONDOS/FONDO_CONTACTO.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

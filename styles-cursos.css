@@ -126,7 +126,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
+  background-image: url(assets/FONDOS/FONDO_CURSO_Y_TALLER.jpg);
   width: 100%;
   height: auto;
 }
@@ -380,7 +380,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CURSO_TALLER.jpg);
+  background-image: url(assets/FONDOS/FONDO_CURSO_Y_TALLER.jpg);
   width: 100%;
   height: auto;
   padding-bottom: 5em;
@@ -635,7 +635,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CONTACTO.jpg);
+  background-image: url(assets/FONDOS/FONDO_CONTACTO.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -930,7 +930,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(assets/FONDOS_DE_LA_WEB/FONDO_CONTACTO.jpg);
+  background-image: url(assets/FONDOS/FONDO_CONTACTO.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
