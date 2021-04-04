@@ -554,10 +554,14 @@ header {
           justify-content: left;
 }
 
+.cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row .photolink {
+  display: none;
+}
+
 .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row a {
   margin: 0;
-  height: 0;
-  width: 0;
+  height: auto;
+  width: auto;
 }
 
 .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row a h3 {
@@ -990,294 +994,15 @@ header {
   height: auto;
 }
 
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row .photolink,
+.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row .photolink {
+  display: none;
+}
+
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a,
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a {
   height: auto;
   width: 100%;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(1),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(1) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(2),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(2) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(3),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(3) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(4),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(4) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(5),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(5) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(6),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(6) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(7),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(7) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(8),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(8) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(9),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(9) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(10),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(10) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(11),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(11) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(12),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(12) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(13),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(13) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(14),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(14) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(15),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(15) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(16),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(16) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(17),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(17) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(18),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(18) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(19),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(19) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(20),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(20) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(21),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(21) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(22),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(22) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(23),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(23) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(24),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(24) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(25),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(25) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(26),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(26) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(27),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(27) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(28),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(28) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(29),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(29) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(30),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(30) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(31),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(31) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(32),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(32) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(33),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(33) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(34),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(34) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(35),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(35) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(36),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(36) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(37),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(37) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(38),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(38) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(39),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(39) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(40),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(40) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(41),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(41) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(42),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(42) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(43),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(43) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(44),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(44) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(45),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(45) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(46),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(46) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(47),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(47) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(48),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(48) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(49),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(49) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(50),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(50) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(51),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(51) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(52),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(52) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(53),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(53) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(54),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(54) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(55),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(55) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(56),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(56) {
-  margin: 0;
-}
-
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a:nth-child(57),
-.galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a:nth-child(57) {
   margin: 0;
 }
 
@@ -1367,12 +1092,13 @@ header {
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a {
   width: 100%;
   height: auto;
-  margin: 1em;
+  margin: 0;
 }
 
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a img {
   width: 100%;
   height: auto;
+  margin: 0 0;
 }
 
 .contacto-cursos {

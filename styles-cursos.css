@@ -214,7 +214,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,22 +278,6 @@ header {
   width: 100%;
 }
 
-.talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-beneficios {
-  padding-right: 1em;
-  border-right: 3px solid #Ff6600;
-  font-family: "Nunito", sans-serif;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-beneficios h1 {
-  color: #Cc9933;
-  font-size: 2em;
-}
-
-.talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-beneficios p {
-  line-height: .5em;
-  color: #996633;
-}
-
 .talleres-cursos .talleres-part2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,6 +293,22 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.talleres-cursos .talleres-part2 .talleres-beneficios {
+  padding-right: 1em;
+  border-right: 3px solid #Ff6600;
+  font-family: "Nunito", sans-serif;
+}
+
+.talleres-cursos .talleres-part2 .talleres-beneficios h1 {
+  color: #Cc9933;
+  font-size: 2em;
+}
+
+.talleres-cursos .talleres-part2 .talleres-beneficios p {
+  line-height: .5em;
+  color: #996633;
 }
 
 .talleres-cursos .talleres-part2 .talleres-lista {
@@ -468,7 +468,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

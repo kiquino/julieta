@@ -215,7 +215,7 @@ header {
                 font-family: $font-nav;
             }
 
-            width: 50%;
+            width: 65%;
             display: flex;
             text-align: left;
         }
@@ -255,24 +255,7 @@ header {
                 width: 100%;
             }
 
-            .talleres-beneficios {
-                padding-right: 1em;
-                border-right: 3px solid $naranja;
-                font-family: $font-nav;
 
-                h1 {
-                    color: $marron-claro;
-
-                    font-size: 2em;
-
-                }
-
-                p {
-                    line-height: .5em;
-                    color: $marron-regular;
-                }
-
-            }
         }
     }
 
@@ -284,6 +267,25 @@ header {
         padding-bottom: 6em;
         height: auto;
         justify-content: space-between;
+
+        .talleres-beneficios {
+            padding-right: 1em;
+            border-right: 3px solid $naranja;
+            font-family: $font-nav;
+
+            h1 {
+                color: $marron-claro;
+
+                font-size: 2em;
+
+            }
+
+            p {
+                line-height: .5em;
+                color: $marron-regular;
+            }
+
+        }
 
         .talleres-lista {
             text-align: left;
@@ -434,7 +436,7 @@ header {
                 font-family: $font-nav;
             }
 
-            width: 50%;
+            width: 65%;
             display: flex;
             text-align: left;
         }
