@@ -402,6 +402,11 @@ header {
                 p {
                     font-size: 1.1rem;
                     color: white;
+                    margin-bottom: 0;
+
+                    b {
+                        text-align: start;
+                    }
 
                     sub {
                         font-size: 8em;
@@ -416,6 +421,7 @@ header {
 
                 &:nth-child(3) {
                     text-align: right;
+                    margin-bottom: 2em;
                 }
             }
         }

@@ -403,6 +403,11 @@ header {
 .about .contenedor-sobremandalas .text-box-bio .text-mandala p {
   font-size: 1.1rem;
   color: white;
+  margin-bottom: 0;
+}
+
+.about .contenedor-sobremandalas .text-box-bio .text-mandala p b {
+  text-align: start;
 }
 
 .about .contenedor-sobremandalas .text-box-bio .text-mandala p sub {
@@ -417,6 +422,7 @@ header {
 
 .about .contenedor-sobremandalas .text-box-bio .text-mandala:nth-child(3) {
   text-align: right;
+  margin-bottom: 2em;
 }
 
 .cv {
