@@ -16,6 +16,9 @@ $marron-oscuro:rgb(102, 51, 51);
 .lightboxOverlay {
     background-color: $marron-regular;
 }
+.lb-outerContainer{
+    background-color: rgba(0, 0, 0, 0);
+}
 
 * {
     margin: 0;
@@ -453,6 +456,7 @@ header {
             flex-direction: column;
             width: 90%;
             justify-content: flex-start;
+            
 
             .cv-item {
                 margin: 0.8em 0;
@@ -498,32 +502,38 @@ header {
         }
 
         .contenedor-extra-cv {
-            width: 90%;
+            width: 100%;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
             text-align: left;
             flex-direction: column;
             margin: 0 auto;
             font-family: $font-nav;
             border-left: 3px solid $naranja;
             padding-left: 1em;
-
+            .lista-extra-cv{
+             p{
+                 color: $marron-oscuro;
+             }   
+            }
             h2 {
                 margin-bottom: 1em;
                 color: $naranja;
-
+                font-weight: 800;
             }
 
             .lightbox-gallery {
                 display: flex;
-                flex-direction: row;
+                flex-direction:row-reverse;
 
                 .container {
                     padding: 0;
 
                     .row {
+                        width: 100%;
                         margin: 0;
-                        justify-content: left;
+                        justify-content: right;
+                        flex-direction: row-reverse;
 
                         .photolink {
                             display: none;
@@ -561,7 +571,7 @@ header {
             }
 
             &:nth-child(2) {
-                justify-content: flex-end;
+                justify-content: space-between;
                 text-align: right;
                 border-left: none;
                 padding-left: none;
