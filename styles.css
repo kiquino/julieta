@@ -97,6 +97,43 @@
   color: #663333;
 }
 
+.idiomas {
+  width: 100%;
+  height: 2em;
+  background-color: #Cc9933;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 20;
+}
+
+.idiomas .texto-idioma {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.idiomas .texto-idioma a {
+  color: #663333;
+  font-family: "Nunito", sans-serif;
+  margin: 0 1em;
+  font-weight: 600;
+}
+
 .jumbotron {
   min-height: 28em;
   display: -webkit-box;
