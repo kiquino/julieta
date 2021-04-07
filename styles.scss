@@ -970,6 +970,7 @@ header {
             display: flex;
             flex-flow: row nowrap;
             margin-left: auto;
+            margin-right: 10%;
             width: max-content;
             justify-content: space-between;
             height: auto;
@@ -978,12 +979,12 @@ header {
                 width: 2em;
 
                 &:nth-child(2) {
-                    margin-right: 1em;
+                    margin-right: .1em;
                 }
 
                 .icon-insta {
-                    width: 3em;
-                    height: 3em;
+                    width: 1.6rem;
+                    height: 1.6rem;
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -993,8 +994,8 @@ header {
                 }
 
                 .icon-face {
-                    width: 3em;
-                    height: 3em;
+                    width: 1.6rem;
+                    height: 1.6rem;
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -1004,12 +1005,21 @@ header {
             }
 
             .logo {
+                display: flex;
+                flex-direction: row;
                 height: 3em;
-                width: 10em;
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-image: url(assets/LOGO/CLAMING.png);
+                width: auto;
+                align-items: center;
+                p{
+                    font-size: 3em;
+                    font-family: $font-din-l;
+                    color: $marron-oscuro;
+                    b{
+                        font-family: $font-din;
+                        font-weight: 300;
+                    }
+                }
+                
             }
 
 
@@ -1025,7 +1035,7 @@ header {
 
             .personal,
             .contenedor-arte {
-                width: 50%;
+                width: 40%;
 
                 height: auto;
 

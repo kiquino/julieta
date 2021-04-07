@@ -1085,6 +1085,7 @@ header {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   margin-left: auto;
+  margin-right: 10%;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1099,12 +1100,12 @@ header {
 }
 
 .galeria .contenedor-contenido-galeria .cta-galeria a:nth-child(2) {
-  margin-right: 1em;
+  margin-right: .1em;
 }
 
 .galeria .contenedor-contenido-galeria .cta-galeria a .icon-insta {
-  width: 3em;
-  height: 3em;
+  width: 1.6rem;
+  height: 1.6rem;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1112,8 +1113,8 @@ header {
 }
 
 .galeria .contenedor-contenido-galeria .cta-galeria a .icon-face {
-  width: 3em;
-  height: 3em;
+  width: 1.6rem;
+  height: 1.6rem;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1121,12 +1122,29 @@ header {
 }
 
 .galeria .contenedor-contenido-galeria .cta-galeria .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 3em;
-  width: 10em;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(assets/LOGO/CLAMING.png);
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.galeria .contenedor-contenido-galeria .cta-galeria .logo p {
+  font-size: 3em;
+  font-family: "din-light";
+  color: #663333;
+}
+
+.galeria .contenedor-contenido-galeria .cta-galeria .logo p b {
+  font-family: "din";
+  font-weight: 300;
 }
 
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria {
@@ -1146,7 +1164,7 @@ header {
 
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal,
 .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte {
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 
