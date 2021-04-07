@@ -2323,6 +2323,7 @@ footer .diseniadora a img {
     font-family: "Open Sans", sans-serif;
     text-align: justify;
     color: #Cc9933;
+    z-index: 10;
   }
   .about .contenedor-sobremandalas {
     background-color: #Cc9933;
