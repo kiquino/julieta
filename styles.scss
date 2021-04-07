@@ -330,7 +330,7 @@ header {
 
 
         .quote {
-            font-size: 2em;
+            font-size: 4rem;
             font-family: $font-nombre;
             width: auto;
         }
@@ -352,7 +352,7 @@ header {
 
         .quote {
             font-family: $font-nombre;
-            font-size: 4em;
+            font-size: 4rem;
             line-height: 1rem;
             width: auto;
         }
@@ -753,7 +753,7 @@ header {
     .talleres-part1 {
         display: flex;
         flex-direction: row;
-        width: 85%;
+        width: 90%;
         height: auto;
         margin: 0 auto;
         margin-top: 3em;
@@ -1605,6 +1605,104 @@ footer {
 
 }
 @media screen and (max-width:550px){
+    .texto-testimonio {
+
+        background-color: $marron-claro;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0em;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        .inline {
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 3em;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            line-height: 3rem;
+            text-align: left;
+            width: 90%;
+            margin: 0.5em auto;
+            height: auto;
+    
+    
+            .quote {
+                font-size: 5rem;
+                font-family: $font-nombre;
+                width: auto;
+                height: auto;
+                line-height: 2rem;
+            }
+    
+            .title-testimonio {
+                font-family: $font-nombre;
+            }
+    
+    
+        }
+    
+        .inline-citacion {
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: nowrap;
+            width: 100%;
+            margin: .5em auto;
+            line-height: 3rem;
+            justify-content: center;
+    
+            .quote {
+                font-family: $font-nombre;
+                font-size: 5rem;
+                line-height: 2rem;
+                width: auto;
+                margin: 1rem auto;
+            }
+    
+            .citacion {
+                font-family: $font-text;
+                font-size: 1.2em;
+            }
+        }
+    
+        p {
+            font-family: $font-nav;
+            font-size: 1.1em;
+            width: 90%;
+            line-height: 1.5em;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+    
+    }
+    .testimonial {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        height: auto;
+        min-height: 10em;
+        background-color: $marron-claro;
+    
+        .jumbotron {
+            padding: 0;
+            width: 100%;
+            margin: 0;
+    
+            .container {
+                margin: 0;
+                width: 100%;
+                height: auto;
+                padding: 0;
+                display: contents;
+    
+            }
+        }
+    }
 
     .talleres {
         display: flex;
@@ -1668,7 +1766,7 @@ footer {
         .talleres-part1 {
             display: flex;
             flex-direction: row;
-            width: 85%;
+            width: 90%;
             height: auto;
             margin: 0 auto;
             margin-top: 3em;
@@ -1683,7 +1781,7 @@ footer {
                     p {
                         font-family: $font-nombre;
                         color: $marron-oscuro;
-                        font-size: 3em;
+                        font-size: 2.5em;
                         line-height: 1em;
                     }
     
@@ -1699,7 +1797,7 @@ footer {
                     font-family: $font-nav;
                 }
     
-                width: 80%;
+                width: 90%;
                 display: flex;
                 text-align: left;
             }
@@ -1749,6 +1847,7 @@ footer {
                     font-family: $font-nav;
                     font-weight: bold;
                     margin-bottom: 0;
+                    font-size: 2em;
                 }
     
                 a {
@@ -1757,6 +1856,7 @@ footer {
                     width: min-content;
     
                     h3 {
+                        
                         color: $naranja;
                         font-family: $font-nav;
                     }
@@ -1773,9 +1873,9 @@ footer {
     
             .talleres-lista {
                 text-align: left;
-                width: 30%;
+                width: 90%;
                 border-left: 3px solid $naranja;
-                padding-left: 1.8em;
+                margin: 0 auto;
                 font-family: $font-nav;
                 line-height: 1.5em;
     
@@ -2167,8 +2267,8 @@ footer {
             margin: 0 auto;
     
             a {
-                width: 100px;
-                height: 100px;
+                width: 4.5em;
+                height: 4.5em;
                 margin: 0rem 5px;
                 overflow: hidden;
     
