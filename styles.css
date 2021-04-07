@@ -1,6 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400;700&family=Philosopher&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+@font-face {
+  font-family: "din";
+  src: url("assets/tipografia/DINNextRoundedLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: "din-regular";
+  src: url("assets/tipografia/DINNextRoundedLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "din-bold";
+  src: url("assets/tipografia/DINNextRoundedLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "din-light";
+  src: url("assets/tipografia/DINNextRoundedLTPro-Light.otf");
+}
+
 .lightboxOverlay {
   background-color: #996633;
 }
@@ -187,8 +207,62 @@ header {
   display: flex;
   top: 40%;
   left: 20%;
-  height: 8em;
-  width: 18em;
+  height: auto;
+  width: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.carousel-item .logo-carousel .nombre-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.carousel-item .logo-carousel .nombre-logo p {
+  font-family: "Philosopher", sans-serif;
+  font-size: 4rem;
+  color: #663333;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+.carousel-item .logo-carousel .nombre-logo p:nth-child(2) {
+  font-weight: normal;
+}
+
+.carousel-item .logo-carousel .artesagrado-redes p {
+  font-family: "din-light";
+  margin: 0;
+  padding: 0;
+  color: #Ff6600;
+  font-size: 3rem;
+  line-height: 1em;
+}
+
+.carousel-item .logo-carousel .artesagrado-redes p b {
+  font-family: "din-regular";
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.carousel-item .logo-carousel .artesagrado-redes a {
+  height: 1em;
+  width: 1em;
+}
+
+.carousel-item .logo-carousel .artesagrado-redes a img {
+  width: 100%;
+  height: auto;
 }
 
 .container {

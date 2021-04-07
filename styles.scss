@@ -1,12 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400;700&family=Philosopher&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@font-face{
+    font-family: "din";
+    src: url("assets/tipografia/DINNextRoundedLTPro-Medium.otf");
+}
+@font-face{
+    font-family: "din-regular";
+    src: url("assets/tipografia/DINNextRoundedLTPro-Regular.otf");
+}
+@font-face{
+    font-family: "din-bold";
+    src: url("assets/tipografia/DINNextRoundedLTPro-Bold.otf");
+}
+@font-face{
+    font-family: "din-light";
+    src: url("assets/tipografia/DINNextRoundedLTPro-Light.otf");
+}
 $font-text:'Open Sans',
 sans-serif;
 $font-nav:'Nunito',
 sans-serif;
 $font-nombre:'Philosopher',
 sans-serif;
+$font-din:'din';
+$font-din-l:'din-light';
+$font-din-r:'din-regular';
+$font-din-b:'din-bold';
 $naranja:#Ff6600;
 $amarillo:#FFFF99;
 $marron-claro:#Cc9933;
@@ -191,9 +211,51 @@ header {
         top: 40%;
         left: 20%;
         
-        height: 8em;
-        width: 18em;
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        .nombre-logo{
+            display: flex;
+            flex-direction: row;
+            p{
+                font-family: $font-nombre;
+                font-size: 4rem;
+                color: $marron-oscuro;
+                font-weight: bolder;
+                margin: 0;
+                padding: 0;
+                line-height: 1em;
+            &:nth-child(2){
+                font-weight: normal;
+            }
+            }
+        }
         
+
+        .artesagrado-redes{
+            p{
+                font-family: $font-din-l;
+                margin: 0;
+                padding: 0;
+                color: $naranja;
+                font-size: 3rem;
+                line-height: 1em;
+                b{
+                    font-family: $font-din-r;
+                    margin: 0;
+                    padding: 0;
+                    font-weight: 500;
+                }
+            }
+            a{
+                height: 1em;
+                width: 1em;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
 
     }
 
