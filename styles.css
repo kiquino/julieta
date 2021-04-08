@@ -105,6 +105,28 @@
   border-right: 3px solid #FFFF99;
 }
 
+.navbar-dark .nav-julieta-nombre {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar-dark .nav-julieta-nombre p {
+  margin: 0;
+  font-family: "Philosopher", sans-serif;
+  color: white;
+  font-weight: 600;
+}
+
+.navbar-dark .nav-julieta-nombre p:nth-child(2) {
+  font-weight: 200;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   font-family: "Nunito", sans-serif;
   font-size: 1.4em;
@@ -1839,6 +1861,76 @@ footer .diseniadora a img {
 }
 
 @media screen and (max-width: 550px) {
+  .navbar-dark .nav-julieta-nombre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navbar-dark .nav-julieta-nombre p {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: "Philosopher", sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+  .navbar-dark .nav-julieta-nombre p:nth-child(2) {
+    font-weight: 200;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: white;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #663333;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #Cc9933;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    padding: 0em 0em;
+  }
+  footer p {
+    font-size: 0.8rem;
+    margin: 2em 0;
+  }
+  footer .diseniadora {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  footer .diseniadora a img {
+    height: auto;
+    width: 100%;
+  }
   .contacto {
     min-height: 10em;
     height: auto;
@@ -1922,6 +2014,12 @@ footer .diseniadora a img {
             align-items: center;
     height: 1.5em;
     margin: auto 0;
+  }
+  .contacto .header-contacto .inline .header-contacto-logos a {
+    padding-right: 1rem;
+  }
+  .contacto .header-contacto .inline .header-contacto-logos a:nth-child(1) {
+    padding-left: 1rem;
   }
   .contacto .header-contacto .inline .header-contacto-logos a .logo {
     height: 2rem;

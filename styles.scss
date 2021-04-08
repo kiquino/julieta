@@ -131,6 +131,20 @@ $marron-oscuro:#663333;
 
 
 .navbar-dark {
+    .nav-julieta-nombre{
+        display: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        p{
+            margin: 0;
+            font-family: $font-nombre;
+            color: white;
+            font-weight: 600;
+            &:nth-child(2){
+                font-weight: 200;
+            }
+        }
+    }
     .navbar-nav {
         .nav-link {
             font-family: $font-nav;
@@ -1605,7 +1619,66 @@ footer {
 
 }
 @media screen and (max-width:550px){
-
+    .navbar-dark {
+        .nav-julieta-nombre{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            p{
+                margin: 0;
+                font-size: 1.4rem;
+                font-family: $font-nombre;
+                color: white;
+                font-weight: 600;
+                &:nth-child(2){
+                    font-weight: 200;
+                }
+            }
+        }
+        .navbar-nav {
+            .nav-link {
+                font-family: $font-nav;
+                font-size: 1.4em;
+                font-weight: bolder;
+                color: rgba(255, 255, 255, 1);
+                &:hover{
+                    color: rgba(102, 51, 51, 1);
+                }
+            }
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $marron-claro;
+        color: white;
+        font-family: $font-nav;
+        width: 100%;
+        align-items: center;
+        height: auto;
+        padding: 0em 0em;
+    
+        p {
+            font-size: 0.8rem;
+            margin: 2em 0;
+        }
+    
+        .diseniadora {
+            width: auto;
+            display: flex;
+            flex-flow: row nowrap;
+    
+            a {
+                img {
+                    height: auto;
+    
+                    width: 100%;
+                }
+            }
+        }
+    
+    }
     .contacto {
         min-height: 10em;
         height: auto;
@@ -1663,6 +1736,10 @@ footer {
                     margin: auto 0;
     
                     a {
+                        padding-right: 1rem;
+                        &:nth-child(1){
+                            padding-left: 1rem;
+                        }
                         .logo {
                             height: 2rem;
                             width: 2rem;
