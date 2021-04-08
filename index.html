@@ -11,6 +11,8 @@
   de esos que caminan en silencio, sin hacer el más mínimo ruido,
   curando a su paso..." />
   <meta name="designer" content="Mariana LADAGA" />
+  <meta name="og:image" content="https://gracious-booth-458785.netlify.app/assets/GALERIA_BIO/MINIATURAS/4.jpg" />
+  
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
@@ -444,13 +446,13 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
 
-          <img src="assets/GALERIA_CURSOS/1.jpg" alt="" srcset="" />
+          <img id="curso-img-3" src="assets/GALERIA_CURSOS/1.jpg" alt="" srcset="" />
+        </div>
+        <div  class="carousel-item">
+          <img id="curso-img-4"  src="assets/GALERIA_CURSOS/2.jpg" alt="" />
         </div>
         <div class="carousel-item">
-          <img src="assets/GALERIA_CURSOS/2.jpg" alt="" />
-        </div>
-        <div class="carousel-item">
-          <img src="assets/GALERIA_CURSOS/3.jpg" alt="" />
+          <img id="curso-img-5" src="assets/GALERIA_CURSOS/3.jpg" alt="" />
         </div>
 
       </div>
@@ -786,10 +788,12 @@
       
 
     var header = document.getElementById("header-nav");
-    var sticky = header.offsetTop + 100;
+    var carouselHeader = document.getElementById("carouselExampleIndicators");
+    var sticky = header.offsetTop;
 
     function myFunction() {
-      if (window.pageYOffset > sticky) {
+      
+      if (window.pageYOffset > (carouselHeader.offsetTop + header.offsetTop)) {
         header.classList.add("sticky");
       } else {
         header.classList.remove("sticky");

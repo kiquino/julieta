@@ -274,8 +274,8 @@ header {
 }
 
 .carousel-item .logo-carousel .artesagrado-redes a img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: auto;
   margin: 0 0.2em;
 }
 
@@ -1104,8 +1104,8 @@ header {
 }
 
 .galeria .contenedor-contenido-galeria .cta-galeria a .icon-insta {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1113,8 +1113,8 @@ header {
 }
 
 .galeria .contenedor-contenido-galeria .cta-galeria a .icon-face {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1137,7 +1137,7 @@ header {
 }
 
 .galeria .contenedor-contenido-galeria .cta-galeria .logo p {
-  font-size: 3em;
+  font-size: 2rem;
   font-family: "din-light";
   color: #663333;
 }
@@ -1368,13 +1368,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 1.5em;
+  height: 2rem;
   margin: auto 0;
 }
 
 .contacto-cursos .header-contacto .contact-redes .inline .header-contacto-logos a .logo {
-  height: 1.5em;
-  width: 1.5em;
+  height: 2rem;
+  width: 2rem;
 }
 
 .contacto-cursos .header-contacto .contact-redes .inline .header-contacto-logos a .insta {
@@ -1643,8 +1643,8 @@ header {
 }
 
 .contacto .header-contacto .inline .header-contacto-logos a .logo {
-  height: 1.5em;
-  width: 1.5em;
+  height: 2rem;
+  width: 2rem;
 }
 
 .contacto .header-contacto .inline .header-contacto-logos a .insta {
@@ -1839,6 +1839,421 @@ footer .diseniadora a img {
 }
 
 @media screen and (max-width: 550px) {
+  .contacto {
+    min-height: 10em;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/mobile/LANDING/FONDOS/FONDO5.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto .header-contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    text-align: right;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    margin-top: 6em;
+  }
+  .contacto .header-contacto .title-header-contacto {
+    font-family: "Philosopher", sans-serif;
+    font-size: 3rem;
+    color: #663333;
+    font-weight: bold;
+  }
+  .contacto .header-contacto .title-header-contacto p {
+    margin: 0;
+    line-height: 1em;
+  }
+  .contacto .header-contacto .inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    text-align: right;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.8em;
+    color: #Ff6600;
+  }
+  .contacto .header-contacto .inline p {
+    margin: 0;
+  }
+  .contacto .header-contacto .inline .header-contacto-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 1.5em;
+    margin: auto 0;
+  }
+  .contacto .header-contacto .inline .header-contacto-logos a .logo {
+    height: 2rem;
+    width: 2rem;
+  }
+  .contacto .header-contacto .inline .header-contacto-logos a .insta {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+  }
+  .contacto .header-contacto .inline .header-contacto-logos a .face {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+  }
+  .contacto .contenedor-form-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto .contenedor-form-info .formulario {
+    width: 100%;
+    margin-bottom: 4em;
+  }
+  .contacto .contenedor-form-info .formulario form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .contacto .contenedor-form-info .formulario form .input {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: .5em;
+    border-radius: 20px;
+    margin: .2em auto;
+  }
+  .contacto .contenedor-form-info .formulario form .input:nth-child(5) {
+    text-align: center;
+  }
+  .contacto .contenedor-form-info .formulario form .input:nth-child(5):hover {
+    background-color: rgba(153, 102, 51, 0.8);
+  }
+  .contacto .contenedor-form-info .formulario form .input:nth-child(5):hover button {
+    color: white;
+  }
+  .contacto .contenedor-form-info .formulario form .input:nth-child(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacto .contenedor-form-info .formulario form .input button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    color: #996633;
+    width: 100%;
+  }
+  .contacto .contenedor-form-info .formulario form .input button:focus {
+    outline: none;
+  }
+  .contacto .contenedor-form-info .formulario form .input label {
+    font-family: "Nunito", sans-serif;
+    color: #996633;
+    margin: 0;
+    margin-right: 1em;
+    font-weight: bold;
+  }
+  .contacto .contenedor-form-info .formulario form .input input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: auto;
+    width: 70%;
+  }
+  .contacto .contenedor-form-info .formulario form .input input:focus {
+    outline: none;
+  }
+  .contacto .contenedor-form-info .formulario form .input textarea {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 80%;
+  }
+  .contacto .contenedor-form-info .formulario form .input textarea:focus {
+    outline: none;
+  }
+  .contacto .contenedor-form-info .datos-contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 90%;
+    font-size: 1.8rem;
+    font-family: "Nunito", sans-serif;
+  }
+  .contacto .contenedor-form-info .datos-contacto p {
+    color: #663333;
+  }
+  .contacto .contenedor-form-info .datos-contacto a {
+    color: #Ff6600;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .galeria {
+    width: 100%;
+    background-image: url(assets/mobile/LANDING/FONDOS/FONDO4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 20em;
+  }
+  .galeria .contenedor-contenido-galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 3em 0;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: auto;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria a {
+    width: 2em;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria a:nth-child(2) {
+    margin-right: .1em;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria a .icon-insta {
+    width: 2rem;
+    height: 2rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria a .icon-face {
+    width: 2rem;
+    height: 2rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 3em;
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria .logo p {
+    font-size: 2rem;
+    font-family: "din-light";
+    color: #663333;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria .logo p b {
+    font-family: "din";
+    font-weight: 300;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte {
+    width: 45%;
+    height: auto;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row {
+    width: 100%;
+    height: auto;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row .photolink,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row .photolink {
+    display: none;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a {
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text {
+    position: relative;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row:hover,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row:hover {
+    background-color: rgba(102, 51, 51, 0.8);
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row:hover p,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row:hover p {
+    opacity: 1;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row p,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row p {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    opacity: 0;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text img,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text img {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: auto;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery {
+    height: 100%;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container {
+    height: 100%;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a img {
+    width: 100%;
+    height: auto;
+    margin: 0 0;
+  }
   .texto-testimonio {
     background-color: #Cc9933;
     width: 100%;
@@ -1951,6 +2366,9 @@ footer .diseniadora a img {
     padding: 0;
     display: contents;
   }
+  .testimonial .jumbotron .container img {
+    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/6.jpg);
+  }
   .talleres {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2021,10 +2439,14 @@ footer .diseniadora a img {
     height: auto;
     width: 50%;
     overflow-x: hidden;
+    position: relative;
   }
   .talleres .talleres-header .talleres-header-img img {
-    width: 100%;
+    content: url("assets/mobile/mandala.png");
+    width: 200%;
     height: auto;
+    position: absolute;
+    top: -50%;
   }
   .talleres .talleres-part1 {
     display: -webkit-box;
@@ -2118,7 +2540,7 @@ footer .diseniadora a img {
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     margin-bottom: 0;
-    font-size: 2em;
+    font-size: 1.8rem;
   }
   .talleres .talleres-part2 .talleres-contenido a {
     -webkit-text-decoration-color: #Ff6600;
@@ -2128,6 +2550,7 @@ footer .diseniadora a img {
     width: min-content;
   }
   .talleres .talleres-part2 .talleres-contenido a h3 {
+    font-size: 1.8rem;
     color: #Ff6600;
     font-family: "Nunito", sans-serif;
   }
@@ -2548,6 +2971,15 @@ footer .diseniadora a img {
   }
   #banner-header-4 {
     content: url(assets/mobile/HEADERS/4.png);
+  }
+  #curso-img-3 {
+    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/3.jpg);
+  }
+  #curso-img-4 {
+    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/4.jpg);
+  }
+  #curso-img-5 {
+    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/5.jpg);
   }
 }
 /*# sourceMappingURL=styles.css.map */

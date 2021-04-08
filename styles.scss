@@ -31,7 +31,7 @@ $naranja:#Ff6600;
 $amarillo:#FFFF99;
 $marron-claro:#Cc9933;
 $marron-regular:rgb(153, 102, 51);
-$marron-oscuro:rgb(102, 51, 51);
+$marron-oscuro:#663333;
 
 .lightboxOverlay {
     background-color: $marron-regular;
@@ -255,8 +255,8 @@ header {
                 width: auto;
                 margin: 0;
                 img{
-                    width: 1.5rem;
-                    height: 1.5rem;
+                    width: 2rem;
+                    height: auto;
                     margin: 0 0.2em;
                 }
             }
@@ -983,8 +983,8 @@ header {
                 }
 
                 .icon-insta {
-                    width: 1.6rem;
-                    height: 1.6rem;
+                    width: 2rem;
+                    height: 2rem;
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -994,8 +994,8 @@ header {
                 }
 
                 .icon-face {
-                    width: 1.6rem;
-                    height: 1.6rem;
+                    width: 2rem;
+                    height: 2rem;
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -1011,7 +1011,7 @@ header {
                 width: auto;
                 align-items: center;
                 p{
-                    font-size: 3em;
+                    font-size: 2rem;
                     font-family: $font-din-l;
                     color: $marron-oscuro;
                     b{
@@ -1199,13 +1199,13 @@ header {
                     flex-direction: row;
                     flex-wrap: nowrap;
                     align-items: center;
-                    height: 1.5em;
+                    height: 2rem;
                     margin: auto 0;
 
-                    a {
+                    a { 
                         .logo {
-                            height: 1.5em;
-                            width: 1.5em;
+                            height: 2rem;
+                            width: 2rem;
                         }
 
                         .insta {
@@ -1434,8 +1434,8 @@ header {
 
                 a {
                     .logo {
-                        height: 1.5em;
-                        width: 1.5em;
+                        height: 2rem;
+                        width: 2rem;
                     }
 
                     .insta {
@@ -1605,6 +1605,396 @@ footer {
 
 }
 @media screen and (max-width:550px){
+
+    .contacto {
+        min-height: 10em;
+        height: auto;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(assets/mobile/LANDING/FONDOS/FONDO5.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        .header-contacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: right;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 2em;
+            margin-top: 6em;
+    
+            .title-header-contacto {
+                font-family: $font-nombre;
+                font-size: 3rem;
+                color: $marron-oscuro;
+                font-weight: bold;
+    
+                p {
+                    margin: 0;
+                    line-height: 1em;
+                }
+            }
+    
+            .inline {
+                display: flex;
+                flex-flow: row nowrap;
+                text-align: right;
+                justify-content: flex-end;
+                align-items: center;
+                font-family: $font-nav;
+                font-size: 1.8em;
+                color: $naranja;
+    
+                p {
+                    margin: 0;
+                }
+    
+                .header-contacto-logos {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    height: 1.5em;
+                    margin: auto 0;
+    
+                    a {
+                        .logo {
+                            height: 2rem;
+                            width: 2rem;
+                        }
+    
+                        .insta {
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+                        }
+    
+                        .face {
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+                        }
+                    }
+                }
+            }
+        }
+    
+        .contenedor-form-info {
+            display: flex;
+            flex-flow: column;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: center;
+    
+            .formulario {
+                width: 100%;
+                margin-bottom: 4em;
+    
+                form {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    width: auto;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+    
+                    .input {
+                        background-color: rgba(255, 255, 255, 0.8);
+                        width: 100%;
+                        padding: .5em;
+                        border-radius: 20px;
+                        margin: .2em auto;
+    
+                        &:nth-child(5) {
+                            text-align: center;
+    
+    
+                            &:hover {
+                                background-color: rgba(153, 102, 51, 0.8);
+    
+                                button {
+                                    color: white;
+                                }
+                            }
+                        }
+    
+                        &:nth-child(4) {
+                            display: flex;
+                        }
+    
+                        button {
+                            background-color: rgba(0, 0, 0, 0);
+                            border: none;
+                            text-align: center;
+                            font-family: $font-nav;
+                            font-weight: bold;
+                            color: $marron-regular;
+                            width: 100%;
+    
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+    
+                        label {
+                            font-family: $font-nav;
+                            color: $marron-regular;
+                            margin: 0;
+                            margin-right: 1em;
+                            font-weight: bold;
+                        }
+    
+                        input {
+                            background-color: rgba(0, 0, 0, 0);
+                            border: none;
+                            width: auto;
+                            width: 70%;
+    
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+    
+                        textarea {
+                            background-color: rgba(0, 0, 0, 0);
+                            border: none;
+                            width: 80%;
+    
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+    
+    
+            }
+    
+            .datos-contacto {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                width: 90%;
+                font-size: 1.8rem;
+                font-family: $font-nav;
+    
+                p {
+                    color: $marron-oscuro;
+    
+                }
+    
+                a {
+                    color: $naranja;
+                    width: min-content;
+                }
+            }
+        }
+    }
+
+    .galeria {
+
+        width: 100%;
+        background-image: url(assets/mobile/LANDING/FONDOS/FONDO4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 20em;
+    
+        .contenedor-contenido-galeria {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+            padding: 3em 0;
+    
+            .cta-galeria {
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 0 auto;
+                margin-bottom: 2em;
+                width: max-content;
+                justify-content: space-between;
+                height: auto;
+    
+                a {
+                    width: 2em;
+    
+                    &:nth-child(2) {
+                        margin-right: .1em;
+                    }
+    
+                    .icon-insta {
+                        width: 2rem;
+                        height: 2rem;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+    
+    
+                        background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+                    }
+    
+                    .icon-face {
+                        width: 2rem;
+                        height: 2rem;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+    
+                    }
+                }
+    
+                .logo {
+                    display: flex;
+                    flex-direction: row;
+                    height: 3em;
+                    width: auto;
+                    align-items: center;
+                    p{
+                        font-size: 2rem;
+                        font-family: $font-din-l;
+                        color: $marron-oscuro;
+                        b{
+                            font-family: $font-din;
+                            font-weight: 300;
+                        }
+                    }
+                    
+                }
+    
+    
+            }
+    
+            .contenedor-grid-galeria {
+                width: 90%;
+                height: auto;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+    
+                .personal,
+                .contenedor-arte {
+                    width: 45%;
+    
+                    height: auto;
+    
+                    .lightbox-gallery {
+                        .container {
+                            .row {
+                                width: 100%;
+                                height: auto;
+    
+                                .photolink {
+                                    display: none;
+                                }
+    
+                                a {
+                                    height: auto;
+                                    width: 100%;
+                                    margin: 0;
+    
+    
+    
+    
+                                    .row-img-text {
+                                        position: relative;
+    
+                                        .text-row {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            display: grid;
+                                            place-items: center;
+                                            background-color: rgba(0, 0, 0, 0);
+    
+                                            &:hover {
+                                                background-color: rgba(102, 51, 51, 0.8);
+    
+                                                p {
+                                                    opacity: 1;
+                                                }
+    
+                                            }
+    
+                                            p {
+                                                font-family: $font-nombre;
+                                                font-size: 2rem;
+                                                color: white;
+                                                font-weight: bolder;
+                                                opacity: 0;
+                                            }
+                                        }
+    
+                                        img {
+                                            width: 100%;
+                                            height: auto;
+                                            display: flex;
+                                            margin: 0 0;
+                                        }
+                                    }
+                                }
+    
+    
+                            }
+                        }
+                    }
+    
+    
+                }
+    
+                .contenedor-arte {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    flex-wrap: nowrap;
+                    height: auto;
+    
+                    .lightbox-gallery {
+                        height: 100%;
+    
+                        .container {
+                            height: 100%;
+    
+                            .row {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+    
+                                a {
+                                    width: 100%;
+                                    height: auto;
+                                    margin: 0;
+    
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                        margin: 0 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+    
+                }
+            }
+        }
+    }
+    
+
+
     .texto-testimonio {
 
         background-color: $marron-claro;
@@ -1699,6 +2089,10 @@ footer {
                 height: auto;
                 padding: 0;
                 display: contents;
+
+                img{
+                    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/6.jpg);
+                }
     
             }
         }
@@ -1755,10 +2149,13 @@ footer {
                 height: auto;
                 width: 50%;
                 overflow-x: hidden;
-    
+                position: relative;
                 img {
-                    width: 100%;
+                    content: url("assets/mobile/mandala.png");
+                    width: 200%;
                     height: auto;
+                    position: absolute;
+                    top: -50%;
                 }
             }
         }
@@ -1847,7 +2244,7 @@ footer {
                     font-family: $font-nav;
                     font-weight: bold;
                     margin-bottom: 0;
-                    font-size: 2em;
+                    font-size: 1.8rem;
                 }
     
                 a {
@@ -1856,7 +2253,7 @@ footer {
                     width: min-content;
     
                     h3 {
-                        
+                        font-size: 1.8rem;
                         color: $naranja;
                         font-family: $font-nav;
                     }
@@ -2304,5 +2701,9 @@ footer {
         content: url(assets/mobile/HEADERS/4.png);
     }
 
-
+        @for $i from 3 to 6 {
+            #curso-img-#{$i}{
+                content:url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/#{$i}.jpg)
+            }
+        }
 }
