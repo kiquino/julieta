@@ -1619,10 +1619,47 @@ footer {
 
 }
 @media screen and (max-width:550px){
+    .idiomas{
+        width: 100%;
+        height: 2em;
+        background-color: $marron-claro;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        z-index: 20;
+    .texto-idioma{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: right;
+        p{
+            margin: 0;
+        }
+        a{
+            color: $marron-oscuro;
+            font-family: $font-nav;
+            margin-right:1em;
+            font-weight: 600;
+            padding-right: 1em;
+           
+            &:nth-child(1){
+                border-right: 2px solid $marron-oscuro;
+    
+            }
+            &:nth-child(2){
+                border-right: 2px solid $marron-oscuro;
+    
+            }
+        }
+    }
+    }
     .carousel-item {
         img {
             overflow:hidden;
-            max-height: 95vh;
+            
             height: auto;
             width: 100%;
         }
