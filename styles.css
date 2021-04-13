@@ -1861,6 +1861,83 @@ footer .diseniadora a img {
 }
 
 @media screen and (max-width: 550px) {
+  .carousel-item img {
+    overflow: hidden;
+    max-height: 95vh;
+    height: auto;
+    width: 100%;
+  }
+  .carousel-item .logo-carousel {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 80%;
+    left: 10%;
+    height: auto;
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .carousel-item .logo-carousel .nombre-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .carousel-item .logo-carousel .nombre-logo p {
+    font-family: "Philosopher", sans-serif;
+    font-size: 3rem;
+    color: #663333;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+  }
+  .carousel-item .logo-carousel .nombre-logo p:nth-child(2) {
+    font-weight: normal;
+  }
+  .carousel-item .logo-carousel .artesagrado-redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .carousel-item .logo-carousel .artesagrado-redes p {
+    font-family: "din-light";
+    margin: 0;
+    padding: 0;
+    color: #Ff6600;
+    font-size: 2rem;
+    line-height: 1em;
+  }
+  .carousel-item .logo-carousel .artesagrado-redes p b {
+    font-family: "din-regular";
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+  }
+  .carousel-item .logo-carousel .artesagrado-redes a {
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+  .carousel-item .logo-carousel .artesagrado-redes a img {
+    width: 2rem;
+    height: auto;
+    margin: 0 0.2em;
+  }
   .navbar-dark .nav-julieta-nombre {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1969,7 +2046,7 @@ footer .diseniadora a img {
   }
   .contacto .header-contacto .title-header-contacto {
     font-family: "Philosopher", sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #663333;
     font-weight: bold;
   }
@@ -1993,7 +2070,7 @@ footer .diseniadora a img {
         -ms-flex-align: center;
             align-items: center;
     font-family: "Nunito", sans-serif;
-    font-size: 1.8em;
+    font-size: 1.2em;
     color: #Ff6600;
   }
   .contacto .header-contacto .inline p {
@@ -2022,8 +2099,8 @@ footer .diseniadora a img {
     padding-left: 1rem;
   }
   .contacto .header-contacto .inline .header-contacto-logos a .logo {
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
   }
   .contacto .header-contacto .inline .header-contacto-logos a .insta {
     background-position: center;
@@ -2140,7 +2217,7 @@ footer .diseniadora a img {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     width: 90%;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-family: "Nunito", sans-serif;
   }
   .contacto .contenedor-form-info .datos-contacto p {
@@ -2401,6 +2478,7 @@ footer .diseniadora a img {
     line-height: 2rem;
   }
   .texto-testimonio .inline .title-testimonio {
+    font-size: 3rem;
     font-family: "Philosopher", sans-serif;
   }
   .texto-testimonio .inline-citacion {

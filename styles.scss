@@ -1619,6 +1619,74 @@ footer {
 
 }
 @media screen and (max-width:550px){
+    .carousel-item {
+        img {
+            overflow:hidden;
+            max-height: 95vh;
+            height: auto;
+            width: 100%;
+        }
+    
+        .logo-carousel {
+            position: absolute;
+            display: flex;
+            top: 80%;
+            left: 10%;
+            
+            height: auto;
+            width: auto;
+            flex-direction: column;
+            .nombre-logo{
+                display: flex;
+                flex-direction: row;
+                p{
+                    font-family: $font-nombre;
+                    font-size: 3rem;
+                    color: $marron-oscuro;
+                    font-weight: bolder;
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1em;
+                &:nth-child(2){
+                    font-weight: normal;
+                }
+                }
+            }
+            
+    
+            .artesagrado-redes{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                p{
+                    font-family: $font-din-l;
+                    margin: 0;
+                    padding: 0;
+                    color: $naranja;
+                    font-size: 2rem;
+                    line-height: 1em;
+                    b{
+                        font-family: $font-din-r;
+                        margin: 0;
+                        padding: 0;
+                        font-weight: 500;
+                    }
+                }
+                a{
+                    height: auto;
+                    width: auto;
+                    margin: 0;
+                    img{
+                        width: 2rem;
+                        height: auto;
+                        margin: 0 0.2em;
+                    }
+                }
+            }
+    
+        }
+    
+    }
     .navbar-dark {
         .nav-julieta-nombre{
             display: flex;
@@ -1703,7 +1771,7 @@ footer {
     
             .title-header-contacto {
                 font-family: $font-nombre;
-                font-size: 3rem;
+                font-size: 2.5rem;
                 color: $marron-oscuro;
                 font-weight: bold;
     
@@ -1720,7 +1788,7 @@ footer {
                 justify-content: flex-end;
                 align-items: center;
                 font-family: $font-nav;
-                font-size: 1.8em;
+                font-size: 1.2em;
                 color: $naranja;
     
                 p {
@@ -1741,8 +1809,8 @@ footer {
                             padding-left: 1rem;
                         }
                         .logo {
-                            height: 2rem;
-                            width: 2rem;
+                            height: 1.5rem;
+                            width: 1.5rem;
                         }
     
                         .insta {
@@ -1859,7 +1927,7 @@ footer {
                 flex-direction: column;
                 flex-wrap: nowrap;
                 width: 90%;
-                font-size: 1.8rem;
+                font-size: 1.3rem;
                 font-family: $font-nav;
     
                 p {
@@ -2107,6 +2175,7 @@ footer {
             }
     
             .title-testimonio {
+                font-size: 3rem;
                 font-family: $font-nombre;
             }
     
