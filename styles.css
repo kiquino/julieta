@@ -200,7 +200,6 @@ html {
 }
 
 .jumbotron {
-  min-height: 28em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2060,7 +2059,7 @@ footer .diseniadora a img {
     font-weight: 300;
   }
   .galeria .contenedor-contenido-galeria .contenedor-grid-galeria {
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
     display: -webkit-box;
@@ -2413,6 +2412,90 @@ footer .diseniadora a img {
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
+  }
+  .texto-testimonio {
+    background-color: #Cc9933;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 3em 1em;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .texto-testimonio .inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 3em;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 1rem;
+    text-align: center;
+    width: 50%;
+    margin: 0.5em auto;
+  }
+  .texto-testimonio .inline .quote {
+    font-size: 3rem;
+    font-family: "Philosopher", sans-serif;
+    width: auto;
+  }
+  .texto-testimonio .inline .title-testimonio {
+    font-size: 2.5rem;
+    font-family: "Philosopher", sans-serif;
+  }
+  .texto-testimonio .inline-citacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+    margin: .5em auto;
+    line-height: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .texto-testimonio .inline-citacion .quote {
+    font-family: "Philosopher", sans-serif;
+    font-size: 5rem;
+    line-height: 2rem;
+    width: auto;
+    margin: 1rem auto;
+  }
+  .texto-testimonio .inline-citacion .citacion {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    margin: 0 auto;
+  }
+  .texto-testimonio p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1em;
+    width: 50%;
+    text-align: center;
   }
 }
 
@@ -2921,6 +3004,90 @@ footer .diseniadora a img {
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
+  }
+  .texto-testimonio {
+    background-color: #Cc9933;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 3em 0em;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .texto-testimonio .inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 3em;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 1rem;
+    text-align: center;
+    width: 90%;
+    margin: 0.5em auto;
+  }
+  .texto-testimonio .inline .quote {
+    font-size: 3rem;
+    font-family: "Philosopher", sans-serif;
+    width: auto;
+  }
+  .texto-testimonio .inline .title-testimonio {
+    font-size: 2.5rem;
+    font-family: "Philosopher", sans-serif;
+  }
+  .texto-testimonio .inline-citacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+    margin: .5em auto;
+    line-height: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .texto-testimonio .inline-citacion .quote {
+    font-family: "Philosopher", sans-serif;
+    font-size: 5rem;
+    line-height: 2rem;
+    width: auto;
+    margin: 1rem auto;
+  }
+  .texto-testimonio .inline-citacion .citacion {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    margin: 0 auto;
+  }
+  .texto-testimonio p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1em;
+    width: 90%;
+    text-align: center;
   }
   .talleres {
     display: -webkit-box;

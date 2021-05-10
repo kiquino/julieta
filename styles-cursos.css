@@ -789,19 +789,20 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 4em 0;
 }
 
 .contacto-cursos .header-contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   text-align: right;
   width: 80%;
   margin: 0 auto;
@@ -809,19 +810,19 @@ body {
   margin-top: 6em;
 }
 
-.contacto-cursos .header-contacto .contact-redes .title-header-contacto {
+.contacto-cursos .header-contacto .title-header-contacto {
   font-family: "Philosopher", sans-serif;
   font-size: 4em;
   color: #663333;
   font-weight: bold;
 }
 
-.contacto-cursos .header-contacto .contact-redes .title-header-contacto p {
+.contacto-cursos .header-contacto .title-header-contacto p {
   margin: 0;
   line-height: 1em;
 }
 
-.contacto-cursos .header-contacto .contact-redes .inline {
+.contacto-cursos .header-contacto .inline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -841,11 +842,11 @@ body {
   color: #Ff6600;
 }
 
-.contacto-cursos .header-contacto .contact-redes .inline p {
+.contacto-cursos .header-contacto .inline p {
   margin: 0;
 }
 
-.contacto-cursos .header-contacto .contact-redes .inline .header-contacto-logos {
+.contacto-cursos .header-contacto .inline .header-contacto-logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -862,50 +863,23 @@ body {
   margin: auto 0;
 }
 
-.contacto-cursos .header-contacto .contact-redes .inline .header-contacto-logos a .logo {
-  height: 1.5em;
-  width: 1.5em;
+.contacto-cursos .header-contacto .inline .header-contacto-logos a .logo {
+  height: 2rem;
+  width: 2rem;
 }
 
-.contacto-cursos .header-contacto .contact-redes .inline .header-contacto-logos a .insta {
+.contacto-cursos .header-contacto .inline .header-contacto-logos a .insta {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
 }
 
-.contacto-cursos .header-contacto .contact-redes .inline .header-contacto-logos a .face {
+.contacto-cursos .header-contacto .inline .header-contacto-logos a .face {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
-}
-
-.contacto-cursos .header-contacto .datos-contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  width: 50%;
-  font-size: 2em;
-  font-family: "Nunito", sans-serif;
-  text-align: left;
-}
-
-.contacto-cursos .header-contacto .datos-contacto p {
-  color: #663333;
-}
-
-.contacto-cursos .header-contacto .datos-contacto a {
-  color: #Ff6600;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
 }
 
 .contacto-cursos .contenedor-form-info {
@@ -924,7 +898,7 @@ body {
 }
 
 .contacto-cursos .contenedor-form-info .formulario {
-  width: 80%;
+  width: 50%;
 }
 
 .contacto-cursos .contenedor-form-info .formulario form {
@@ -941,297 +915,33 @@ body {
           align-items: center;
 }
 
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  height: auto;
-  margin-bottom: 1em;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .contact-form .input {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 80%;
-  padding: .5em;
-  border-radius: 20px;
-  margin: .2em 0;
-  text-align: left;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .contact-form .input:focus {
-  outline: none;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 80%;
-  padding: .5em;
-  border-radius: 20px;
-  margin: .2em auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input:focus {
-  outline: none;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input label {
-  font-family: "Nunito", sans-serif;
-  color: #996633;
-  margin: 0;
-  margin-right: 1em;
-  font-weight: bold;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input input {
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  width: auto;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input input:focus {
-  outline: none;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input textarea {
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .contenedor-todo .input textarea:focus {
-  outline: none;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form button {
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  color: #996633;
-  width: 100%;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form button:focus {
-  outline: none;
-}
-
 .contacto-cursos .contenedor-form-info .formulario form .input {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  padding: .5em;
-  border-radius: 20px;
-  margin: .2em auto;
-  text-align: center;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .input:focus {
-  outline: none;
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .input:hover {
-  background-color: rgba(153, 102, 51, 0.8);
-}
-
-.contacto-cursos .contenedor-form-info .formulario form .input:hover button {
-  color: white;
-}
-
-.contacto {
-  min-height: 10em;
-  height: auto;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contacto .header-contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  text-align: right;
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 2em;
-  margin-top: 6em;
-}
-
-.contacto .header-contacto .title-header-contacto {
-  font-family: "Philosopher", sans-serif;
-  font-size: 4em;
-  color: #663333;
-  font-weight: bold;
-}
-
-.contacto .header-contacto .title-header-contacto p {
-  margin: 0;
-  line-height: 1em;
-}
-
-.contacto .header-contacto .inline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  text-align: right;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Nunito", sans-serif;
-  font-size: 1.8em;
-  color: #Ff6600;
-}
-
-.contacto .header-contacto .inline p {
-  margin: 0;
-}
-
-.contacto .header-contacto .inline .header-contacto-logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 1.5em;
-  margin: auto 0;
-}
-
-.contacto .header-contacto .inline .header-contacto-logos a .logo {
-  height: 1.5em;
-  width: 1.5em;
-}
-
-.contacto .header-contacto .inline .header-contacto-logos a .insta {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
-}
-
-.contacto .header-contacto .inline .header-contacto-logos a .face {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
-}
-
-.contacto .contenedor-form-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  width: 80%;
-  margin: 1em auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contacto .contenedor-form-info .formulario {
-  width: 50%;
-}
-
-.contacto .contenedor-form-info .formulario form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  width: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contacto .contenedor-form-info .formulario form .input {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   width: 80%;
   padding: .5em;
   border-radius: 20px;
   margin: .2em auto;
 }
 
-.contacto .contenedor-form-info .formulario form .input:nth-child(5) {
+.contacto-cursos .contenedor-form-info .formulario form .input:nth-child(5) {
   text-align: center;
 }
 
-.contacto .contenedor-form-info .formulario form .input:nth-child(5):hover {
+.contacto-cursos .contenedor-form-info .formulario form .input:nth-child(5):hover {
   background-color: rgba(153, 102, 51, 0.8);
 }
 
-.contacto .contenedor-form-info .formulario form .input:nth-child(5):hover button {
+.contacto-cursos .contenedor-form-info .formulario form .input:nth-child(5):hover button {
   color: white;
 }
 
-.contacto .contenedor-form-info .formulario form .input:nth-child(4) {
+.contacto-cursos .contenedor-form-info .formulario form .input:nth-child(4) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contacto .contenedor-form-info .formulario form .input button {
+.contacto-cursos .contenedor-form-info .formulario form .input button {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   text-align: center;
@@ -1241,11 +951,11 @@ body {
   width: 100%;
 }
 
-.contacto .contenedor-form-info .formulario form .input button:focus {
+.contacto-cursos .contenedor-form-info .formulario form .input button:focus {
   outline: none;
 }
 
-.contacto .contenedor-form-info .formulario form .input label {
+.contacto-cursos .contenedor-form-info .formulario form .input label {
   font-family: "Nunito", sans-serif;
   color: #996633;
   margin: 0;
@@ -1253,28 +963,28 @@ body {
   font-weight: bold;
 }
 
-.contacto .contenedor-form-info .formulario form .input input {
+.contacto-cursos .contenedor-form-info .formulario form .input input {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   width: auto;
   width: 80%;
 }
 
-.contacto .contenedor-form-info .formulario form .input input:focus {
+.contacto-cursos .contenedor-form-info .formulario form .input input:focus {
   outline: none;
 }
 
-.contacto .contenedor-form-info .formulario form .input textarea {
+.contacto-cursos .contenedor-form-info .formulario form .input textarea {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   width: 80%;
 }
 
-.contacto .contenedor-form-info .formulario form .input textarea:focus {
+.contacto-cursos .contenedor-form-info .formulario form .input textarea:focus {
   outline: none;
 }
 
-.contacto .contenedor-form-info .datos-contacto {
+.contacto-cursos .contenedor-form-info .datos-contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1289,11 +999,11 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.contacto .contenedor-form-info .datos-contacto p {
+.contacto-cursos .contenedor-form-info .datos-contacto p {
   color: #663333;
 }
 
-.contacto .contenedor-form-info .datos-contacto a {
+.contacto-cursos .contenedor-form-info .datos-contacto a {
   color: #Ff6600;
   width: -webkit-min-content;
   width: -moz-min-content;
