@@ -29,7 +29,7 @@ $marron-oscuro:rgb(102, 51, 51);
 
     width: auto;
 
-    left: -10%;
+    left: 0;
 
 
     .dropdown-item {
@@ -94,6 +94,7 @@ $marron-oscuro:rgb(102, 51, 51);
     }
 }
 
+
 .navbar-dark {
     .navbar-nav {
         .nav-link {
@@ -103,6 +104,66 @@ $marron-oscuro:rgb(102, 51, 51);
             color: rgba(255, 255, 255, 1);
             &:hover{
                 color: rgba(102, 51, 51, 1);
+            }
+        }
+    }
+}
+@media screen and (max-width:1440px) {
+    .dropdown-menu {
+        background-color: $marron-claro;
+        width: 100%;
+        text-align: center;
+        border: none;
+    
+        width: auto;
+    
+        left: -12%;
+    
+    
+        .dropdown-item {
+            color: white;
+            font-family: $font-nav;
+            font-weight: bold;
+    
+            border-radius: 0;
+            font-size: 1.3rem;
+    
+            &:hover {
+                background-color: $marron-regular;
+            }
+    
+    
+    
+        }
+    }
+}
+@media screen and (max-width:900px){
+    
+    .navbar-dark {
+        .nav-julieta-nombre{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            p{
+                margin: 0;
+                font-size: 1.4rem;
+                font-family: $font-nombre;
+                color: white;
+                font-weight: 600;
+                &:nth-child(2){
+                    font-weight: 200;
+                }
+            }
+        }
+        .navbar-nav {
+            .nav-link {
+                font-family: $font-nav;
+                font-size: 1.4em;
+                font-weight: bolder;
+                color: rgba(255, 255, 255, 1);
+                &:hover{
+                    color: rgba(102, 51, 51, 1);
+                }
             }
         }
     }

@@ -14,7 +14,7 @@
   text-align: center;
   border: none;
   width: auto;
-  left: -10%;
+  left: 0;
 }
 
 .dropdown-menu .dropdown-item {
@@ -79,5 +79,60 @@
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #663333;
+}
+
+@media screen and (max-width: 1440px) {
+  .dropdown-menu {
+    background-color: #Cc9933;
+    width: 100%;
+    text-align: center;
+    border: none;
+    width: auto;
+    left: -12%;
+  }
+  .dropdown-menu .dropdown-item {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    border-radius: 0;
+    font-size: 1.3rem;
+  }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #996633;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-dark .nav-julieta-nombre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navbar-dark .nav-julieta-nombre p {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: "Philosopher", sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+  .navbar-dark .nav-julieta-nombre p:nth-child(2) {
+    font-weight: 200;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: white;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #663333;
+  }
 }
 /*# sourceMappingURL=nav.css.map */

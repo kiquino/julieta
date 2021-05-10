@@ -15,13 +15,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" />
     <link rel="stylesheet" href="styles-cursos.css" />
     <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" href="assets/icon_d2206ac168ae133de6f5a40361dce584.ico" type="image/x-icon">
+    <style>
+        @media screen and (max-width:540px) {
+            #banner-header{
+                content:url(assets/mobile/HEADERS/3.png);
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
+        <div class="idiomas"><div class="texto-idioma"><a href=""><p>ENG</p></a><a href=""><p>SPA</p></a><a href=""><p>DEUTCH</p></a></div></div>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <img src="assets/BANNER_SUPERIOR_LANDING/3.png" alt="Banner de la seccion cursos" srcset="">
+                <img id="banner-header" src="assets/BANNER_SUPERIOR_LANDING/3.png" alt="Banner de la seccion cursos" srcset="">
             </div>
         </div>
 
@@ -32,6 +41,7 @@
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="nav-julieta-nombre"><p>Julieta</p><p>Nahum</p></div>
             <div id="my-nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -168,52 +178,40 @@
     </section>
     <div id="contacto" class="contacto-cursos">
         <div class="header-contacto">
-            <div class="contact-redes">
-                <div class="title-header-contacto">
-                    <p>CONTACTO</p>
-                </div>
-                <div class="inline">
-                    <p>+SEGUIME EN</p>
-                    <div class="header-contacto-logos">
-                        <a href="">
-                            <div class="logo insta"></div>
-                        </a>
-                        <a href="">
-                            <div class="logo face"></div>
-                        </a></div>
-                </div>
+            <div class="title-header-contacto">
+              <p>CONTACTO</p>
             </div>
+            <div class="inline">
+              <p>+SEGUIME EN</p>
+              <div class="header-contacto-logos">
+                <a href="">
+                  <div class="logo insta"></div>
+                </a>
+                <a href="">
+                  <div class="logo face"></div>
+                </a></div>
+            </div>
+      
+          </div>
+          <div class="contenedor-form-info">
             <div class="datos-contacto">
-                <p>+INFORMES E INSCRIPCIÓN</p>
-                <p>Teléfono: 0049-1718074710</p>
-                <a href="mailto:info@julietanahum.com">info@julietanahum.com</a>
-
+              <p>+INFORMES E INSCRIPCIÓN</p>
+              <p>Teléfono: 0049-1718074710</p>
+              <a href="mailto:info@julietanahum.com">info@julietanahum.com</a>
+              <p>::Bünde | Deutschland::</p>
             </div>
-        </div>
-        <div class="contenedor-form-info">
-
             <div class="formulario">
-                <form id="form" action="" method="post">
-                    <div class="contenedor-todo">
-                        <div class="contact-form">
-                            <div class="input"><label for="nombre">NOMBRE: </label><input type="text" name="nombre"
-                                    id="nombre">
-                            </div>
-                            <div class="input"><label for="mail">MAIL: </label><input type="email" name="mail"
-                                    id="mail">
-                            </div>
-                        </div>
-
-
-                        <div class="input"><label for="textarea">MENSAJE: </label><textarea name="textarea"
-                                id="textarea" cols="30" rows="5"></textarea></div>
-                    </div>
-
-                    <div class="input"><button type="submit">Enviar</button></div>
-                </form>
-
+              <form id="form" action="" method="post">
+                <div class="input"><label for="nombre">NOMBRE: </label><input type="text" name="nombre" id="nombre"></div>
+                <div class="input"><label for="mail">MAIL: </label><input type="email" name="mail" id="mail"></div>
+                <div class="input"><label for="tel">TEL: </label><input type="tel" name="tel" id="tel"></div>
+                <div class="input"><label for="textarea">MENSAJE: </label><textarea name="textarea" id="textarea" cols="30"
+                    rows="5"></textarea></div>
+                <div class="input"><button type="submit">Enviar</button></div>
+              </form>
+      
             </div>
-        </div>
+          </div>
     </div>
     <footer>
         <div class="derechos">
@@ -222,7 +220,7 @@
         <div class="diseniadora">
             <p>::Diseño WEB</p>
             <a href="link-a-diseniadora">
-                <img src="assets/LOGO/mi-logo.svg" alt="logo mariana" srcset="">
+                <img src="assets/LOGO/MLDG.svg" alt="logo mariana" srcset="">
             </a>
         </div>
     </footer>

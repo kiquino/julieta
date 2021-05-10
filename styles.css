@@ -21,6 +21,14 @@
   src: url("assets/tipografia/DINNextRoundedLTPro-Light.otf");
 }
 
+.mobileshow {
+  display: none;
+}
+
+html {
+  min-width: 341px;
+}
+
 .lightboxOverlay {
   background-color: #996633;
 }
@@ -46,7 +54,9 @@
 
 .dropdown-menu {
   background-color: #Cc9933;
-  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   text-align: center;
   border: none;
   left: 0;
@@ -460,6 +470,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(assets/FONDOS/ELEFANTE.png);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .about .mandala img {
@@ -517,7 +529,7 @@ header {
 .about .contenedor-bio .text-box-bio .text-bio p {
   font-family: "Open Sans", sans-serif;
   text-align: justify;
-  color: #Cc9933;
+  color: #663333;
 }
 
 .about .contenedor-sobremandalas {
@@ -546,7 +558,7 @@ header {
 }
 
 .about .contenedor-sobremandalas .text-box-bio .title-mandalas p {
-  font-size: 8em;
+  font-size: 7em;
   font-family: "Philosopher", sans-serif;
   color: white;
   font-weight: bolder;
@@ -575,7 +587,7 @@ header {
   text-align: start;
 }
 
-.about .contenedor-sobremandalas .text-box-bio .text-mandala p sub {
+.about .contenedor-sobremandalas .text-box-bio .text-mandala sub {
   font-size: 8em;
   font-family: "Philosopher", sans-serif;
   color: white;
@@ -586,6 +598,7 @@ header {
 }
 
 .about .contenedor-sobremandalas .text-box-bio .text-mandala:nth-child(3) {
+  font-family: "Philosopher", sans-serif;
   text-align: right;
   margin-bottom: 2em;
 }
@@ -834,7 +847,7 @@ header {
 
 .talleres .talleres-header .talleres-header-title p {
   font-size: 5rem;
-  width: 50%;
+  width: 80%;
   font-family: "Philosopher", sans-serif;
   font-weight: 600;
   color: white;
@@ -1119,10 +1132,11 @@ header {
 
 .galeria .contenedor-contenido-galeria .cta-galeria a {
   width: 2em;
+  margin: 0 .2rem;
 }
 
 .galeria .contenedor-contenido-galeria .cta-galeria a:nth-child(2) {
-  margin-right: .1em;
+  margin-right: .2em;
 }
 
 .galeria .contenedor-contenido-galeria .cta-galeria a .icon-insta {
@@ -1578,7 +1592,7 @@ header {
   height: auto;
   width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-image: url(assets/FONDOS/FONDO_CONTACTO.jpg);
   display: -webkit-box;
@@ -1591,6 +1605,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 4em 0;
 }
 
 .contacto .header-contacto {
@@ -1717,7 +1732,7 @@ header {
 }
 
 .contacto .contenedor-form-info .formulario form .input {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   width: 80%;
   padding: .5em;
   border-radius: 20px;
@@ -1860,7 +1875,641 @@ footer .diseniadora a img {
   width: 100%;
 }
 
+@media screen and (max-width: 1440px) {
+  .dropdown-menu {
+    background-color: #Cc9933;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    border: none;
+    left: -12%;
+  }
+  .dropdown-menu .dropdown-item {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    border-radius: 0;
+    font-size: 1.3rem;
+  }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #996633;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .talleres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/FONDOS/FONDO_CURSO_Y_TALLER.jpg);
+    width: 100%;
+    height: auto;
+    padding-bottom: 5em;
+  }
+  .talleres .talleres-header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    min-height: 12em;
+    background-color: #Cc9933;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talleres .talleres-header .talleres-header-title {
+    width: 50%;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 0;
+  }
+  .talleres .talleres-header .talleres-header-title p {
+    font-size: 3rem;
+    width: 80%;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 600;
+    color: white;
+  }
+  .talleres .talleres-header .talleres-header-title h2 {
+    text-align: left;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    padding-top: 0em;
+    border-top: 3px solid black;
+  }
+  .talleres .talleres-header .talleres-header-img {
+    height: auto;
+    width: 60%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 22em;
+  }
+  .talleres .talleres-header .talleres-header-img img {
+    width: 100%;
+    height: auto;
+  }
+  .galeria {
+    width: 100%;
+    background-image: url(assets/FONDOS/FONDO_GALERIA.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 20em;
+  }
+  .galeria .contenedor-contenido-galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 3em 0;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin-left: auto;
+    margin-right: 10%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: auto;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria a {
+    width: 2em;
+    margin: 0 .2rem;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria a:nth-child(2) {
+    margin-right: .5em;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria a .icon-insta {
+    width: 2rem;
+    height: 2rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria a .icon-face {
+    width: 2rem;
+    height: 2rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 3em;
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria .logo p {
+    font-size: 2rem;
+    font-family: "din-light";
+    color: #663333;
+  }
+  .galeria .contenedor-contenido-galeria .cta-galeria .logo p b {
+    font-family: "din";
+    font-weight: 300;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte {
+    width: 45%;
+    height: auto;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row {
+    width: 100%;
+    height: auto;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row .photolink,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row .photolink {
+    display: none;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a {
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text {
+    position: relative;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row:hover,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row:hover {
+    background-color: rgba(102, 51, 51, 0.8);
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row:hover p,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row:hover p {
+    opacity: 1;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text .text-row p,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text .text-row p {
+    font-family: "Philosopher", sans-serif;
+    font-size: 3em;
+    color: white;
+    font-weight: bolder;
+    opacity: 0;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .personal .lightbox-gallery .container .row a .row-img-text img,
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a .row-img-text img {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: auto;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery {
+    height: 100%;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container {
+    height: 100%;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .galeria .contenedor-contenido-galeria .contenedor-grid-galeria .contenedor-arte .lightbox-gallery .container .row a img {
+    width: 100%;
+    height: auto;
+    margin: 0 0;
+  }
+  .dropdown-menu {
+    background-color: #Cc9933;
+    width: 100%;
+    text-align: center;
+    border: none;
+    left: 50%;
+  }
+  .dropdown-menu .dropdown-item {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    border-radius: 0;
+    font-size: 1.3rem;
+  }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #996633;
+  }
+  .contacto {
+    min-height: 10em;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/mobile/LANDING/FONDOS/FONDO5.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto .header-contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    text-align: right;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    margin-top: 6em;
+  }
+  .contacto .header-contacto .title-header-contacto {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.5rem;
+    color: #663333;
+    font-weight: bold;
+  }
+  .contacto .header-contacto .title-header-contacto p {
+    margin: 0;
+    line-height: 1em;
+  }
+  .contacto .header-contacto .inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    text-align: right;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2em;
+    color: #Ff6600;
+  }
+  .contacto .header-contacto .inline p {
+    margin: 0;
+  }
+  .contacto .header-contacto .inline .header-contacto-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 1.5em;
+    margin: auto 0;
+  }
+  .contacto .header-contacto .inline .header-contacto-logos a {
+    padding-right: 1rem;
+  }
+  .contacto .header-contacto .inline .header-contacto-logos a:nth-child(1) {
+    padding-left: 1rem;
+  }
+  .contacto .header-contacto .inline .header-contacto-logos a .logo {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .contacto .header-contacto .inline .header-contacto-logos a .insta {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+  }
+  .contacto .header-contacto .inline .header-contacto-logos a .face {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+  }
+  .contacto .contenedor-form-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto .contenedor-form-info .formulario {
+    width: 100%;
+    margin-bottom: 4em;
+  }
+  .contacto .contenedor-form-info .formulario form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .contacto .contenedor-form-info .formulario form .input {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: .5em;
+    border-radius: 20px;
+    margin: .2em auto;
+  }
+  .contacto .contenedor-form-info .formulario form .input:nth-child(5) {
+    text-align: center;
+  }
+  .contacto .contenedor-form-info .formulario form .input:nth-child(5):hover {
+    background-color: rgba(153, 102, 51, 0.8);
+  }
+  .contacto .contenedor-form-info .formulario form .input:nth-child(5):hover button {
+    color: white;
+  }
+  .contacto .contenedor-form-info .formulario form .input:nth-child(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacto .contenedor-form-info .formulario form .input button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    color: #996633;
+    width: 100%;
+  }
+  .contacto .contenedor-form-info .formulario form .input button:focus {
+    outline: none;
+  }
+  .contacto .contenedor-form-info .formulario form .input label {
+    font-family: "Nunito", sans-serif;
+    color: #996633;
+    margin: 0;
+    margin-right: 1em;
+    font-weight: bold;
+  }
+  .contacto .contenedor-form-info .formulario form .input input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: auto;
+    width: 70%;
+  }
+  .contacto .contenedor-form-info .formulario form .input input:focus {
+    outline: none;
+  }
+  .contacto .contenedor-form-info .formulario form .input textarea {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 80%;
+  }
+  .contacto .contenedor-form-info .formulario form .input textarea:focus {
+    outline: none;
+  }
+  .contacto .contenedor-form-info .datos-contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 90%;
+    font-size: 1.3rem;
+    font-family: "Nunito", sans-serif;
+  }
+  .contacto .contenedor-form-info .datos-contacto p {
+    color: #663333;
+  }
+  .contacto .contenedor-form-info .datos-contacto a {
+    color: #Ff6600;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .talleres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/FONDOS/FONDO_CURSO_Y_TALLER.jpg);
+    width: 100%;
+    height: auto;
+    padding-bottom: 5em;
+  }
+  .talleres .talleres-header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    min-height: 12em;
+    background-color: #Cc9933;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talleres .talleres-header .talleres-header-title {
+    width: 50%;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 0;
+  }
+  .talleres .talleres-header .talleres-header-title p {
+    font-size: 2.5rem;
+    width: 80%;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 600;
+    color: white;
+  }
+  .talleres .talleres-header .talleres-header-title h2 {
+    text-align: left;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    padding-top: 0em;
+    border-top: 3px solid black;
+  }
+  .talleres .talleres-header .talleres-header-img {
+    height: auto;
+    width: 60%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 22em;
+  }
+  .talleres .talleres-header .talleres-header-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 550px) {
+  .lb-outerContainer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .lb-outerContainer .lb-container .lb-nav .lb-next {
+    opacity: 1;
+  }
+  .lb-outerContainer .lb-container .lb-nav .lb-prev {
+    display: block !important;
+    opacity: 1;
+  }
+  .mobileshow {
+    display: block;
+  }
   .idiomas {
     width: 100%;
     height: 2em;
@@ -2273,6 +2922,639 @@ footer .diseniadora a img {
     width: -moz-min-content;
     width: min-content;
   }
+  .talleres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/FONDOS/FONDO_CURSO_Y_TALLER.jpg);
+    width: 100%;
+    height: auto;
+    padding-bottom: 5em;
+  }
+  .talleres .talleres-header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    min-height: auto;
+    background-color: #Cc9933;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talleres .talleres-header .talleres-header-title {
+    width: 40%;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem 0;
+    min-height: 15em;
+    position: relative;
+  }
+  .talleres .talleres-header .talleres-header-title p {
+    position: absolute;
+    font-size: 2rem;
+    top: 30%;
+    left: 10%;
+    width: 100%;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 600;
+    color: white;
+  }
+  .talleres .talleres-header .talleres-header-title h2 {
+    text-align: left;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    padding-top: 0em;
+    border-top: 3px solid black;
+  }
+  .talleres .talleres-header .talleres-header-img {
+    height: auto;
+    width: 60%;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .talleres .talleres-header .talleres-header-img img {
+    content: url("assets/mobile/mandala.png");
+    width: 150%;
+    height: auto;
+    position: absolute;
+    top: -30%;
+  }
+  .talleres .talleres-part1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 3em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talleres .talleres-part1 .talleres-part1-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+  .talleres .talleres-part1 .talleres-part1-text .talleres-part1-title p {
+    font-family: "Philosopher", sans-serif;
+    color: #663333;
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+  .talleres .talleres-part1 .talleres-part1-text p {
+    color: #Cc9933;
+    font-family: "Nunito", sans-serif;
+  }
+  .talleres .talleres-part1 .talleres-part1-text b {
+    color: #996633;
+    font-family: "Nunito", sans-serif;
+  }
+  .talleres .talleres-part1 .talleres-part1-extra {
+    width: 35%;
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talleres .talleres-part1 .talleres-part1-extra .talleres-beneficios {
+    padding-right: 1em;
+    border-right: 3px solid #Ff6600;
+    font-family: "Nunito", sans-serif;
+  }
+  .talleres .talleres-part1 .talleres-part1-extra .talleres-beneficios h1 {
+    color: #Cc9933;
+    font-size: 2em;
+  }
+  .talleres .talleres-part1 .talleres-part1-extra .talleres-beneficios p {
+    line-height: .5em;
+    color: #996633;
+  }
+  .talleres .talleres-part2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talleres .talleres-part2 .talleres-contenido {
+    margin-bottom: 2em;
+  }
+  .talleres .talleres-part2 .talleres-contenido h1 {
+    color: #996633;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+  .talleres .talleres-part2 .talleres-contenido a {
+    -webkit-text-decoration-color: #Ff6600;
+            text-decoration-color: #Ff6600;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .talleres .talleres-part2 .talleres-contenido a h3 {
+    font-size: 1.4rem;
+    color: #Ff6600;
+    font-family: "Nunito", sans-serif;
+  }
+  .talleres .talleres-part2 .talleres-contenido {
+    width: 100%;
+  }
+  .talleres .talleres-part2 .talleres-lista {
+    text-align: left;
+    width: 90%;
+    border-left: 3px solid #Ff6600;
+    margin: 0 auto;
+    font-family: "Nunito", sans-serif;
+    line-height: 1.5em;
+  }
+  .talleres .talleres-part2 .talleres-lista p {
+    margin: 0;
+    padding: 0;
+    color: #Cc9933;
+    font-size: 1.2rem;
+  }
+  .talleres .talleres-part2 .talleres-lista b {
+    font-size: 1.1rem;
+    color: #996633;
+  }
+  .talleres .talleres-part2 .talleres-pronto {
+    width: auto;
+    color: #663333;
+    margin-top: 2em;
+  }
+  .talleres .talleres-part2 .talleres-pronto p {
+    padding: 0;
+    margin: 0;
+    font-family: "Philosopher", sans-serif;
+    font-size: 2em;
+    text-align: right;
+    line-height: 1em;
+  }
+  .talleres .talleres-part2 .talleres-pronto p:nth-child(2) {
+    letter-spacing: .15em;
+    border-bottom: 3px solid #Ff6600;
+  }
+  .talleres .talleres-part2 .talleres-pronto p:nth-child(3) {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+  }
+  .talleres .talleres-part2 .talleres-pronto p:nth-child(4) {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+  }
+  .talleres .talleres-part2 .talleres-pronto .muy-pronto {
+    width: auto;
+    height: 4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(assets/LOGO/MUY_PRONTO.svg);
+  }
+  .cv {
+    z-index: 3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/FONDOS/FONDO_CV.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0% 0%;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cv .contenedor-cv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 95%;
+    margin: 4em auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2em;
+  }
+  .cv .contenedor-cv:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cv .contenedor-cv .contenedor-items-cv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin-top: 4em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .cv .contenedor-cv .contenedor-items-cv .cv-item {
+    margin: 0.8em 0;
+    font-family: "Nunito", sans-serif;
+  }
+  .cv .contenedor-cv .contenedor-items-cv .cv-item :nth-child(1) {
+    color: #663333;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .cv .contenedor-cv .contenedor-items-cv .cv-item :nth-child(2) {
+    color: #Cc9933;
+  }
+  .cv .contenedor-cv .download-cv a {
+    text-decoration: none;
+  }
+  .cv .contenedor-cv .download-cv a:hover {
+    text-decoration: none;
+    -webkit-text-decoration-color: #Ff6600;
+            text-decoration-color: #Ff6600;
+    text-decoration-thickness: 3px;
+  }
+  .cv .contenedor-cv .download-cv a h1 {
+    font-family: "Philosopher", sans-serif;
+    font-weight: bolder;
+    color: #663333;
+    margin-bottom: 0;
+    line-height: .8em;
+  }
+  .cv .contenedor-cv .download-cv a h3 {
+    font-family: "Nunito", sans-serif;
+    font-weight: bolder;
+    color: #Ff6600;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    font-family: "Nunito", sans-serif;
+    border-left: 3px solid #Ff6600;
+    padding-left: 1em;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv:nth-child(1) {
+    margin-bottom: 3em;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv:nth-child(2) {
+    margin-bottom: 4em;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv .lista-extra-cv p {
+    color: #663333;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv h2 {
+    margin-bottom: 1em;
+    color: #Ff6600;
+    font-weight: 800;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container {
+    padding: 0;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row {
+    width: 100%;
+    margin: 0;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row .photolink {
+    display: none;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row a {
+    margin: 0;
+    height: auto;
+    width: auto;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row a h3 {
+    font-size: 1.5em;
+    color: #Ff6600;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #Ff6600;
+            text-decoration-color: #Ff6600;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv a h3 {
+    font-size: 1.5em;
+    color: #Ff6600;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #Ff6600;
+            text-decoration-color: #Ff6600;
+  }
+  .cv .contenedor-cv .contenedor-extra-cv:nth-child(2) {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: right;
+    border-left: none;
+    padding-left: none;
+    padding-right: 1em;
+    border-right: 3px solid #Ff6600;
+  }
+  .about {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    background-size: cover;
+    background-image: url(assets/FONDOS/FONDO_BIO.jpg);
+  }
+  .about .mandala {
+    display: block;
+    min-height: 1350px;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/FONDOS/ELEFANTE.png);
+  }
+  .about .mandala img {
+    display: none;
+    width: 50%;
+    height: auto;
+    z-index: 2;
+  }
+  .about .contenedor-bio {
+    width: 100%;
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .about .contenedor-bio .text-box-bio {
+    height: 100%;
+    width: 95%;
+    padding-top: auto;
+    padding-right: 0;
+    margin: 0 auto;
+    text-align: right;
+    z-index: 20;
+  }
+  .about .contenedor-bio .text-box-bio .title-bio {
+    font-size: 6em;
+    font-family: "Philosopher", sans-serif;
+    color: #Cc9933;
+  }
+  .about .contenedor-bio .text-box-bio .title-bio p {
+    padding: 0;
+    line-height: 4rem;
+  }
+  .about .contenedor-bio .text-box-bio .sub-bio {
+    width: 100%;
+  }
+  .about .contenedor-bio .text-box-bio .sub-bio h3 {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    color: #663333;
+    letter-spacing: 1px;
+  }
+  .about .contenedor-bio .text-box-bio .text-bio p {
+    font-family: "Open Sans", sans-serif;
+    text-align: justify;
+    color: #Cc9933;
+    z-index: 10;
+  }
+  .about .contenedor-sobremandalas {
+    background-color: #Cc9933;
+    width: 100%;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .about .contenedor-sobremandalas .text-box-bio {
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    width: 90%;
+    padding-top: 5%;
+    text-align: justify;
+  }
+  .about .contenedor-sobremandalas .text-box-bio .title-mandalas p {
+    font-size: 3em;
+    font-family: "Philosopher", sans-serif;
+    color: white;
+    font-weight: bolder;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    text-align: right;
+  }
+  .about .contenedor-sobremandalas .text-box-bio .title-mandalas p sup {
+    font-size: 4.5rem;
+    font-family: "Philosopher", sans-serif;
+    color: white;
+    font-weight: bolder;
+    line-height: 2rem;
+    text-align: right;
+    margin-left: auto;
+    top: .5em;
+  }
+  .about .contenedor-sobremandalas .text-box-bio .text-mandala p {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 0;
+  }
+  .about .contenedor-sobremandalas .text-box-bio .text-mandala p b {
+    text-align: start;
+  }
+  .about .contenedor-sobremandalas .text-box-bio .text-mandala sub {
+    font-size: 4.5em;
+    font-family: "Philosopher", sans-serif;
+    color: white;
+    font-weight: bolder;
+    line-height: 2rem;
+    text-align: right;
+    margin-left: 90%;
+  }
+  .about .contenedor-sobremandalas .text-box-bio .text-mandala:nth-child(3) {
+    text-align: right;
+    margin-bottom: 2em;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1em;
+  }
+  .container .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .container .row a {
+    width: 4.5em;
+    height: 4.5em;
+    margin: 0rem 5px;
+    overflow: hidden;
+  }
+  .container .row a img {
+    width: 100px;
+    height: auto;
+  }
+  .carousel-indicators {
+    bottom: 90%;
+  }
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  #banner-header-1 {
+    content: url(assets/mobile/HEADERS/1.jpg);
+  }
+  #banner-header-2 {
+    content: url(assets/mobile/HEADERS/2.png);
+  }
+  #banner-header-3 {
+    content: url(assets/mobile/HEADERS/3.png);
+  }
+  #banner-header-4 {
+    content: url(assets/mobile/HEADERS/4.png);
+  }
+  #curso-img-3 {
+    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/3.jpg);
+  }
+  #curso-img-4 {
+    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/4.jpg);
+  }
+  #curso-img-5 {
+    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/5.jpg);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .mobileshow {
+    display: block;
+  }
   .galeria {
     width: 100%;
     background-image: url(assets/mobile/LANDING/FONDOS/FONDO4.jpg);
@@ -2473,122 +3755,6 @@ footer .diseniadora a img {
     height: auto;
     margin: 0 0;
   }
-  .texto-testimonio {
-    background-color: #Cc9933;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 3em 0em;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .texto-testimonio .inline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    font-size: 3em;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    line-height: 3rem;
-    text-align: left;
-    width: 90%;
-    margin: 0.5em auto;
-    height: auto;
-  }
-  .texto-testimonio .inline .quote {
-    font-size: 5rem;
-    font-family: "Philosopher", sans-serif;
-    width: auto;
-    height: auto;
-    line-height: 2rem;
-  }
-  .texto-testimonio .inline .title-testimonio {
-    font-size: 3rem;
-    font-family: "Philosopher", sans-serif;
-  }
-  .texto-testimonio .inline-citacion {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    width: 100%;
-    margin: .5em auto;
-    line-height: 3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .texto-testimonio .inline-citacion .quote {
-    font-family: "Philosopher", sans-serif;
-    font-size: 5rem;
-    line-height: 2rem;
-    width: auto;
-    margin: 1rem auto;
-  }
-  .texto-testimonio .inline-citacion .citacion {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2em;
-  }
-  .texto-testimonio p {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.1em;
-    width: 90%;
-    line-height: 1.5em;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .testimonial {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    height: auto;
-    min-height: 10em;
-    background-color: #Cc9933;
-  }
-  .testimonial .jumbotron {
-    padding: 0;
-    width: 100%;
-    margin: 0;
-  }
-  .testimonial .jumbotron .container {
-    margin: 0;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    display: contents;
-  }
-  .testimonial .jumbotron .container img {
-    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/6.jpg);
-  }
   .talleres {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2623,7 +3789,7 @@ footer .diseniadora a img {
             justify-content: space-between;
   }
   .talleres .talleres-header .talleres-header-title {
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2639,10 +3805,15 @@ footer .diseniadora a img {
         -ms-flex-align: center;
             align-items: center;
     padding: 3rem 0;
+    min-height: 15em;
+    position: relative;
   }
   .talleres .talleres-header .talleres-header-title p {
-    font-size: 2rem;
-    width: 50%;
+    position: absolute;
+    font-size: 1.8rem;
+    top: 30%;
+    left: 10%;
+    width: 100%;
     font-family: "Philosopher", sans-serif;
     font-weight: 600;
     color: white;
@@ -2657,16 +3828,17 @@ footer .diseniadora a img {
   }
   .talleres .talleres-header .talleres-header-img {
     height: auto;
-    width: 50%;
+    width: 60%;
     overflow-x: hidden;
     position: relative;
   }
   .talleres .talleres-header .talleres-header-img img {
     content: url("assets/mobile/mandala.png");
-    width: 200%;
+    width: 150%;
     height: auto;
     position: absolute;
-    top: -50%;
+    top: -30%;
+    left: 10%;
   }
   .talleres .talleres-part1 {
     display: -webkit-box;
@@ -2760,7 +3932,7 @@ footer .diseniadora a img {
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     margin-bottom: 0;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .talleres .talleres-part2 .talleres-contenido a {
     -webkit-text-decoration-color: #Ff6600;
@@ -2770,7 +3942,7 @@ footer .diseniadora a img {
     width: min-content;
   }
   .talleres .talleres-part2 .talleres-contenido a h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #Ff6600;
     font-family: "Nunito", sans-serif;
   }
@@ -2789,8 +3961,10 @@ footer .diseniadora a img {
     margin: 0;
     padding: 0;
     color: #Cc9933;
+    font-size: 1.2rem;
   }
   .talleres .talleres-part2 .talleres-lista b {
+    font-size: 1.1rem;
     color: #996633;
   }
   .talleres .talleres-part2 .talleres-pronto {
@@ -2825,381 +3999,6 @@ footer .diseniadora a img {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url(assets/LOGO/MUY_PRONTO.svg);
-  }
-  .cv {
-    z-index: 3;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(assets/FONDOS/FONDO_CV.jpg);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 95%;
-    margin: 0 auto;
-    padding: 0% 0%;
-    height: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .cv .contenedor-cv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 95%;
-    margin: 0 auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .cv .contenedor-cv:nth-child(2) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .cv .contenedor-cv .contenedor-items-cv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 90%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .cv .contenedor-cv .contenedor-items-cv .cv-item {
-    margin: 0.8em 0;
-    font-family: "Nunito", sans-serif;
-  }
-  .cv .contenedor-cv .contenedor-items-cv .cv-item :nth-child(1) {
-    color: #663333;
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-  .cv .contenedor-cv .contenedor-items-cv .cv-item :nth-child(2) {
-    color: #Cc9933;
-  }
-  .cv .contenedor-cv .download-cv a {
-    text-decoration: none;
-  }
-  .cv .contenedor-cv .download-cv a:hover {
-    text-decoration: none;
-    -webkit-text-decoration-color: #Ff6600;
-            text-decoration-color: #Ff6600;
-    text-decoration-thickness: 3px;
-  }
-  .cv .contenedor-cv .download-cv a h1 {
-    font-family: "Philosopher", sans-serif;
-    font-weight: bolder;
-    color: #663333;
-    margin-bottom: 0;
-    line-height: .8em;
-  }
-  .cv .contenedor-cv .download-cv a h3 {
-    font-family: "Nunito", sans-serif;
-    font-weight: bolder;
-    color: #Ff6600;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    text-align: left;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 auto;
-    font-family: "Nunito", sans-serif;
-    border-left: 3px solid #Ff6600;
-    padding-left: 1em;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv .lista-extra-cv p {
-    color: #663333;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv h2 {
-    margin-bottom: 1em;
-    color: #Ff6600;
-    font-weight: 800;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container {
-    padding: 0;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row {
-    width: 100%;
-    margin: 0;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row .photolink {
-    display: none;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row a {
-    margin: 0;
-    height: auto;
-    width: auto;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row a h3 {
-    font-size: 1.5em;
-    color: #Ff6600;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv .lightbox-gallery .container .row a:hover {
-    text-decoration: underline;
-    -webkit-text-decoration-color: #Ff6600;
-            text-decoration-color: #Ff6600;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv a h3 {
-    font-size: 1.5em;
-    color: #Ff6600;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv a:hover {
-    text-decoration: underline;
-    -webkit-text-decoration-color: #Ff6600;
-            text-decoration-color: #Ff6600;
-  }
-  .cv .contenedor-cv .contenedor-extra-cv:nth-child(2) {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    text-align: right;
-    border-left: none;
-    padding-left: none;
-    padding-right: 1em;
-    border-right: 3px solid #Ff6600;
-  }
-  .about {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    width: 100%;
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow-y: hidden;
-    background-size: cover;
-    background-image: url(assets/FONDOS/FONDO_BIO.jpg);
-  }
-  .about .mandala {
-    display: block;
-    min-height: 1350px;
-    width: 50%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(assets/FONDOS/ELEFANTE.png);
-  }
-  .about .mandala img {
-    display: none;
-    width: 50%;
-    height: auto;
-    z-index: 2;
-  }
-  .about .contenedor-bio {
-    width: 100%;
-    height: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .about .contenedor-bio .text-box-bio {
-    height: 100%;
-    width: 95%;
-    padding-top: auto;
-    padding-right: 0;
-    margin: 0 auto;
-    text-align: right;
-    z-index: 20;
-  }
-  .about .contenedor-bio .text-box-bio .title-bio {
-    font-size: 6em;
-    font-family: "Philosopher", sans-serif;
-    color: #Cc9933;
-  }
-  .about .contenedor-bio .text-box-bio .title-bio p {
-    padding: 0;
-    line-height: 4rem;
-  }
-  .about .contenedor-bio .text-box-bio .sub-bio {
-    width: 100%;
-  }
-  .about .contenedor-bio .text-box-bio .sub-bio h3 {
-    font-family: "Philosopher", sans-serif;
-    font-weight: 700;
-    color: #663333;
-    letter-spacing: 1px;
-  }
-  .about .contenedor-bio .text-box-bio .text-bio p {
-    font-family: "Open Sans", sans-serif;
-    text-align: justify;
-    color: #Cc9933;
-    z-index: 10;
-  }
-  .about .contenedor-sobremandalas {
-    background-color: #Cc9933;
-    width: 100%;
-    height: 30%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .about .contenedor-sobremandalas .text-box-bio {
-    height: 100%;
-    font-family: "Open Sans", sans-serif;
-    width: 90%;
-    padding-top: 5%;
-    text-align: justify;
-  }
-  .about .contenedor-sobremandalas .text-box-bio .title-mandalas p {
-    font-size: 3em;
-    font-family: "Philosopher", sans-serif;
-    color: white;
-    font-weight: bolder;
-    line-height: 2rem;
-    padding-bottom: 1rem;
-    text-align: right;
-  }
-  .about .contenedor-sobremandalas .text-box-bio .title-mandalas p sup {
-    font-size: 3rem;
-    font-family: "Philosopher", sans-serif;
-    color: white;
-    font-weight: bolder;
-    line-height: 2rem;
-    text-align: right;
-    margin-left: auto;
-    top: .5em;
-  }
-  .about .contenedor-sobremandalas .text-box-bio .text-mandala p {
-    font-size: 1.1rem;
-    color: white;
-    margin-bottom: 0;
-  }
-  .about .contenedor-sobremandalas .text-box-bio .text-mandala p b {
-    text-align: start;
-  }
-  .about .contenedor-sobremandalas .text-box-bio .text-mandala p sub {
-    font-size: 3em;
-    font-family: "Philosopher", sans-serif;
-    color: white;
-    font-weight: bolder;
-    line-height: 2rem;
-    text-align: right;
-    margin-left: auto;
-  }
-  .about .contenedor-sobremandalas .text-box-bio .text-mandala:nth-child(3) {
-    text-align: right;
-    margin-bottom: 2em;
-  }
-  .container {
-    width: 100%;
-    padding: 0;
-    padding-bottom: 1em;
-  }
-  .container .row {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 auto;
-  }
-  .container .row a {
-    width: 4.5em;
-    height: 4.5em;
-    margin: 0rem 5px;
-    overflow: hidden;
-  }
-  .container .row a img {
-    width: 100px;
-    height: auto;
-  }
-  .carousel-indicators {
-    bottom: 90%;
-  }
-  .carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-  }
-  #banner-header-1 {
-    content: url(assets/mobile/HEADERS/1.png);
-  }
-  #banner-header-2 {
-    content: url(assets/mobile/HEADERS/2.png);
-  }
-  #banner-header-3 {
-    content: url(assets/mobile/HEADERS/3.png);
-  }
-  #banner-header-4 {
-    content: url(assets/mobile/HEADERS/4.png);
-  }
-  #curso-img-3 {
-    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/3.jpg);
-  }
-  #curso-img-4 {
-    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/4.jpg);
-  }
-  #curso-img-5 {
-    content: url(assets/mobile/LANDING/CURSOS_Y_TALLERES/CARROSEL/5.jpg);
   }
 }
 /*# sourceMappingURL=styles.css.map */

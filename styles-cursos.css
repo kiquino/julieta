@@ -1,8 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400;700&family=Philosopher&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+@font-face {
+  font-family: "din";
+  src: url("assets/tipografia/DINNextRoundedLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: "din-regular";
+  src: url("assets/tipografia/DINNextRoundedLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "din-bold";
+  src: url("assets/tipografia/DINNextRoundedLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "din-light";
+  src: url("assets/tipografia/DINNextRoundedLTPro-Light.otf");
+}
+
+html {
+  min-width: 341px;
+}
+
 .lightboxOverlay {
   background-color: #996633;
+}
+
+.idiomas {
+  width: 100%;
+  height: 2em;
+  background-color: #Cc9933;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 20;
+}
+
+.idiomas .texto-idioma {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+}
+
+.idiomas .texto-idioma p {
+  margin: 0;
+}
+
+.idiomas .texto-idioma a {
+  color: #663333;
+  font-family: "Nunito", sans-serif;
+  margin-right: 1em;
+  font-weight: 600;
+  padding-right: 1em;
+}
+
+.idiomas .texto-idioma a:nth-child(1) {
+  border-right: 2px solid #663333;
+}
+
+.idiomas .texto-idioma a:nth-child(2) {
+  border-right: 2px solid #663333;
 }
 
 * {
@@ -11,6 +86,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
 }
 
 .jumbotron {
@@ -27,8 +106,12 @@
   display: contents;
 }
 
+.jumbotron .container img {
+  width: 100%;
+  height: auto;
+}
+
 .jumbotron {
-  min-height: 28em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,12 +149,77 @@ header {
   display: flex;
   top: 40%;
   left: 20%;
-  background-size: contain;
-  height: 8em;
-  width: 18em;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(assets/LOGO/LOGO+REDES.png);
+  height: auto;
+  width: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.carousel-item .logo-carousel .nombre-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.carousel-item .logo-carousel .nombre-logo p {
+  font-family: "Philosopher", sans-serif;
+  font-size: 4rem;
+  color: #663333;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+.carousel-item .logo-carousel .nombre-logo p:nth-child(2) {
+  font-weight: normal;
+}
+
+.carousel-item .logo-carousel .artesagrado-redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel-item .logo-carousel .artesagrado-redes p {
+  font-family: "din-light";
+  margin: 0;
+  padding: 0;
+  color: #Ff6600;
+  font-size: 3rem;
+  line-height: 1em;
+}
+
+.carousel-item .logo-carousel .artesagrado-redes p b {
+  font-family: "din-regular";
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.carousel-item .logo-carousel .artesagrado-redes a {
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+.carousel-item .logo-carousel .artesagrado-redes a img {
+  width: 2rem;
+  height: auto;
+  margin: 0 0.2em;
 }
 
 .container {
@@ -115,6 +263,13 @@ header {
   margin-left: 0;
 }
 
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(assets/FONDOS/FONDO_CURSO_Y_TALLER.jpg);
+}
+
 .talleres-cursos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,10 +278,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(assets/FONDOS/FONDO_CURSO_Y_TALLER.jpg);
   width: 100%;
   height: auto;
 }
@@ -377,10 +528,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(assets/FONDOS/FONDO_CURSO_Y_TALLER.jpg);
   width: 100%;
   height: auto;
   padding-bottom: 5em;
@@ -632,10 +779,6 @@ header {
   min-height: 10em;
   height: auto;
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(assets/FONDOS/FONDO_CONTACTO.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -927,10 +1070,6 @@ header {
   min-height: 10em;
   height: auto;
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(assets/FONDOS/FONDO_CONTACTO.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1208,5 +1347,527 @@ footer .diseniadora {
 footer .diseniadora a img {
   height: auto;
   width: 100%;
+}
+
+.navbar-dark .nav-julieta-nombre {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar-dark .nav-julieta-nombre p {
+  margin: 0;
+  font-family: "Philosopher", sans-serif;
+  color: white;
+  font-weight: 600;
+}
+
+.navbar-dark .nav-julieta-nombre p:nth-child(2) {
+  font-weight: 200;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.4em;
+  font-weight: bolder;
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #663333;
+}
+
+@media screen and (max-width: 660px) {
+  .talleres-cursos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .talleres-cursos .talleres-header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    min-height: 12em;
+    background-color: #Cc9933;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .talleres-cursos .talleres-header .talleres-header-title {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem 0;
+    padding-left: 8%;
+  }
+  .talleres-cursos .talleres-header .talleres-header-title p {
+    font-size: 4rem;
+    width: auto;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 600;
+    color: white;
+    border-bottom: 3px solid #663333;
+  }
+  .talleres-cursos .talleres-header .talleres-header-title p:nth-child(2) {
+    font-family: "Nunito", sans-serif;
+    font-size: 2.5rem;
+    border-bottom: none;
+  }
+  .talleres-cursos .talleres-header .talleres-header-title h2 {
+    text-align: left;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    padding-top: 0em;
+    border-top: 3px solid black;
+  }
+  .talleres-cursos .talleres-part1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 3em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talleres-cursos .talleres-part1 .talleres-part1-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+  .talleres-cursos .talleres-part1 .talleres-part1-text .talleres-part1-title p {
+    font-family: "Philosopher", sans-serif;
+    color: #663333;
+    font-size: 3em;
+    line-height: 1em;
+  }
+  .talleres-cursos .talleres-part1 .talleres-part1-text p {
+    font-size: 1.2rem;
+    color: #Cc9933;
+    font-family: "Nunito", sans-serif;
+  }
+  .talleres-cursos .talleres-part1 .talleres-part1-text b {
+    color: #996633;
+    font-family: "Nunito", sans-serif;
+  }
+  .talleres-cursos .talleres-part1 .talleres-part1-extra {
+    width: 100%;
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-contenido {
+    margin-bottom: 2em;
+  }
+  .talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-contenido h1 {
+    color: #996633;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-contenido a {
+    -webkit-text-decoration-color: #Ff6600;
+            text-decoration-color: #Ff6600;
+  }
+  .talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-contenido a h3 {
+    font-size: 1.5rem;
+    color: #Ff6600;
+    font-family: "Nunito", sans-serif;
+  }
+  .talleres-cursos .talleres-part1 .talleres-part1-extra .talleres-contenido {
+    width: 100%;
+  }
+  .talleres-cursos .talleres-part2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 6em;
+    height: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talleres-cursos .talleres-part2 .talleres-beneficios {
+    padding-right: 1em;
+    border-right: 3px solid #Ff6600;
+    font-family: "Nunito", sans-serif;
+  }
+  .talleres-cursos .talleres-part2 .talleres-beneficios h1 {
+    color: #Cc9933;
+    font-size: 2em;
+  }
+  .talleres-cursos .talleres-part2 .talleres-beneficios p {
+    line-height: .5em;
+    color: #996633;
+  }
+  .talleres-cursos .talleres-part2 .talleres-beneficios {
+    text-align: right;
+  }
+  .talleres-cursos .talleres-part2 .talleres-lista {
+    text-align: left;
+    width: 80%;
+    border-left: 3px solid #Ff6600;
+    padding-left: 1em;
+    font-family: "Nunito", sans-serif;
+    line-height: 1.5em;
+  }
+  .talleres-cursos .talleres-part2 .talleres-lista:nth-child(1) {
+    margin-bottom: 3rem;
+  }
+  .talleres-cursos .talleres-part2 .talleres-lista p {
+    margin: 0;
+    padding: 0;
+    color: #Cc9933;
+  }
+  .talleres-cursos .talleres-part2 .talleres-lista b {
+    color: #996633;
+  }
+  .talleres-cursos .talleres-part2 .talleres-pronto {
+    width: auto;
+    color: #663333;
+    margin-top: 2em;
+  }
+  .talleres-cursos .talleres-part2 .talleres-pronto p {
+    padding: 0;
+    margin: 0;
+    font-family: "Philosopher", sans-serif;
+    font-size: 2em;
+    text-align: right;
+    line-height: 1em;
+  }
+  .talleres-cursos .talleres-part2 .talleres-pronto p:nth-child(2) {
+    letter-spacing: .15em;
+    border-bottom: 3px solid #Ff6600;
+  }
+  .talleres-cursos .talleres-part2 .talleres-pronto p:nth-child(3) {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+  }
+  .talleres-cursos .talleres-part2 .talleres-pronto p:nth-child(4) {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+  }
+  .talleres-cursos .talleres-part2 .talleres-pronto .muy-pronto {
+    width: auto;
+    height: 4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(assets/LOGO/MUY_PRONTO.svg);
+  }
+  .contacto-cursos {
+    min-height: 10em;
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto-cursos .header-contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    text-align: right;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    margin-top: 6em;
+  }
+  .contacto-cursos .header-contacto .title-header-contacto {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.5rem;
+    color: #663333;
+    font-weight: bold;
+  }
+  .contacto-cursos .header-contacto .title-header-contacto p {
+    margin: 0;
+    line-height: 1em;
+  }
+  .contacto-cursos .header-contacto .inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    text-align: right;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    color: #Ff6600;
+  }
+  .contacto-cursos .header-contacto .inline p {
+    margin: 0;
+  }
+  .contacto-cursos .header-contacto .inline .header-contacto-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 1.5em;
+    margin: auto 0;
+  }
+  .contacto-cursos .header-contacto .inline .header-contacto-logos a {
+    padding-right: 1rem;
+  }
+  .contacto-cursos .header-contacto .inline .header-contacto-logos a:nth-child(1) {
+    padding-left: 1rem;
+  }
+  .contacto-cursos .header-contacto .inline .header-contacto-logos a .logo {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .contacto-cursos .header-contacto .inline .header-contacto-logos a .insta {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/LOGO/iconfinder_Rounded_Facebook_svg_5282541.svg);
+  }
+  .contacto-cursos .header-contacto .inline .header-contacto-logos a .face {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/LOGO/iconfinder_icon-04_2515843.svg);
+  }
+  .contacto-cursos .contenedor-form-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto-cursos .contenedor-form-info .formulario {
+    width: 100%;
+    margin-bottom: 4em;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: .5em;
+    border-radius: 20px;
+    margin: .2em auto;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input:nth-child(5) {
+    text-align: center;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input:nth-child(5):hover {
+    background-color: rgba(153, 102, 51, 0.8);
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input:nth-child(5):hover button {
+    color: white;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input:nth-child(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    color: #996633;
+    width: 100%;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input button:focus {
+    outline: none;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input label {
+    font-family: "Nunito", sans-serif;
+    color: #996633;
+    margin: 0;
+    margin-right: 1em;
+    font-weight: bold;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: auto;
+    width: 70%;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input input:focus {
+    outline: none;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input textarea {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 80%;
+  }
+  .contacto-cursos .contenedor-form-info .formulario form .input textarea:focus {
+    outline: none;
+  }
+  .contacto-cursos .contenedor-form-info .datos-contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 90%;
+    font-size: 1.3rem;
+    font-family: "Nunito", sans-serif;
+  }
+  .contacto-cursos .contenedor-form-info .datos-contacto p {
+    color: #663333;
+  }
+  .contacto-cursos .contenedor-form-info .datos-contacto a {
+    color: #Ff6600;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #Cc9933;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    padding: 0em 0em;
+  }
+  footer p {
+    font-size: 0.8rem;
+    margin: 2em 0;
+  }
+  footer .diseniadora {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  footer .diseniadora a img {
+    height: auto;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles-cursos.css.map */
