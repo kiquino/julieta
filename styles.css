@@ -3366,7 +3366,7 @@ footer .diseniadora a img {
   .about .mandala {
     display: block;
     min-height: 1350px;
-    width: 50%;
+    width: 100%;
     height: auto;
     position: absolute;
     top: 0;
@@ -3426,7 +3426,7 @@ footer .diseniadora a img {
   .about .contenedor-bio .text-box-bio .text-bio p {
     font-family: "Open Sans", sans-serif;
     text-align: justify;
-    color: #Cc9933;
+    color: #663333;
     z-index: 10;
   }
   .about .contenedor-sobremandalas {
